@@ -1,0 +1,182 @@
+{
+  "checked_on": "2026-09-24",
+  "external_toolchain_scope": "Existing native executables on PATH, including documented serial-build Exonerate workaround; not a clean dependency-lock installation.",
+  "external_tools": {
+    "exonerate": {
+      "sha256": "64aaf0a37971f176f16379fc1a128b9624f3c626df8d835e370280d4668bf24a",
+      "version_lines": [
+        "exonerate from exonerate version 2.4.0",
+        "Using glib version 2.88.3"
+      ]
+    },
+    "gffread": {
+      "sha256": "5c715a7819eea1ef685014e8a041870dc977880620d558a102746d74c6775787",
+      "version_lines": [
+        "0.12.7"
+      ]
+    },
+    "hmmbuild": {
+      "sha256": "5db6c77cabe05148323d3d5bb11dc40092db689665de45298ad0432b6425e443",
+      "version_lines": [
+        "# hmmbuild :: profile HMM construction from multiple sequence alignments",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "hmmfetch": {
+      "sha256": "6b818ef14bf2f2df0edeb6dec21bd0a13175631515c1fc17b1df3bf4978cd40f",
+      "version_lines": [
+        "# hmmfetch :: retrieve profile HMM(s) from a file",
+        "# Easel 0.49 (Aug 2023)"
+      ]
+    },
+    "hmmpress": {
+      "sha256": "fae530291c3b45c0aefaed77f0ae117dca276d961d2d4cf418b765030a05141d",
+      "version_lines": [
+        "# hmmpress :: prepare an HMM database for faster hmmscan searches",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "hmmscan": {
+      "sha256": "f314a324ca2765ff2b10cbe85f584d304670778f49275093fca0a842eaf2adae",
+      "version_lines": [
+        "# hmmscan :: search sequence(s) against a profile database",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "miniprot": {
+      "sha256": "d3486e710325ea0589bf0bfbb1c06d5a6796e051018b1f48330907c7e366dff7",
+      "version_lines": [
+        "0.18-r281"
+      ]
+    },
+    "samtools": {
+      "sha256": "444ce4ab72e2b305742c7165633c11083be411ec2b0a64b8992733a05f7df313",
+      "version_lines": [
+        "samtools 1.21",
+        "Using htslib 1.21"
+      ]
+    },
+    "seqkit": {
+      "sha256": "8b3a229fcad8a3bdcc25c38680b2058b859d293121554f106ae41fc38f2c0711",
+      "version_lines": [
+        "seqkit v2.12.0"
+      ]
+    }
+  },
+  "fixture_identity": {
+    "schema_version": 1,
+    "sha256": {
+      "DATA_LICENSES.md": "7c2b12578688b743ad9a0cafc850961c5626256c84846ca447a5bae1c1c8c72b",
+      "PROVENANCE.json": "3465051e18f3687618b08e8090a758de98fa34bb21116d757fc189d59eb5815c",
+      "README.md": "5820e44ad9981cd394b1e93fab0d2f5b1af77d47fd2b4cbd0ed029be0beeaad8",
+      "annotation.gff3": "2248a99ab61f974cec9057d538397fae34abf210d96bfa536e0ba3d59a3efe7c",
+      "config.yaml": "5d2629136df723c3e3a3eaee933f4ca967afdf63507fe50c2e9f481fae55af8f",
+      "db/nbd.hmm": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+      "db/pfam_mini.hmm": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+      "emapper.annotations": "c6ddb03610c12f6228d92b2acba8e6f5fa2c92b2e4480afcfde677181409b751",
+      "genome.fa": "957af612ef0d37423b91011a6cb8124384b79dc828607089d972d1b7ff6adbda",
+      "proteins.faa": "8805d7a23ece92ef581aa86388980d93de2c55cf4a52e4b1625888e33adee917"
+    },
+    "source": "examples/demo"
+  },
+  "installed_package": {
+    "fixture_self_test": "VERIFIED",
+    "fresh_python_environment": true,
+    "outside_source_tree": true,
+    "pip_check": "PASSED",
+    "production_model_self_test": "NOT_REQUESTED",
+    "python_distributions": {
+      "PyYAML": "6.0.3",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.66.0",
+      "funlr": "0.5.0a2",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.8",
+      "numpy": "1.26.4",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "12.3.0",
+      "pip": "25.0.1",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.4",
+      "six": "1.17.0",
+      "tzdata": "2026.4"
+    },
+    "wheel_package_files_matching_source": 65,
+    "wheel_sha256": "09bb947ab6b38477b0c00a9ecaa93308d54e0e639da82b47b27fae025d3a13fb"
+  },
+  "installed_status_and_report": {
+    "html_export": "PASSED",
+    "html_sha256": "537fcc73dcec5b3d28b2d2c889496ebfc145fb6b9cfae6bfc6076f4fc2ad438f",
+    "matched_output_files": 252,
+    "output_integrity": "VERIFIED",
+    "visual_render_review": "NOT_PERFORMED"
+  },
+  "not_established": [
+    "No new full-genome native run",
+    "No independent biological accuracy benchmark",
+    "No clean Conda-lock installation or container execution in this validation",
+    "Hosted CI and public repository access not exercised during local preparation",
+    "Production model redistribution and complete construction history remain unresolved"
+  ],
+  "platform": {
+    "machine": "arm64",
+    "release": "23.6.0",
+    "system": "Darwin"
+  },
+  "public_demo": {
+    "candidate_count": 6,
+    "completed_stages": 8,
+    "funlr_version": "0.5.0a2",
+    "intron_bp": 49,
+    "resume_reused_stages": 8,
+    "stage6_comprehensive_refine_count": 3,
+    "stage6_refine_count": 1,
+    "status": "passed",
+    "strict_candidate_count": 3,
+    "tiers": {
+      "ATG1_Q3ZDQ4": "TIER_4A_REPEAT_ONLY_NO_NBD",
+      "HETE_A7IQW3": "TIER_1A_HIGH_CONFIDENCE",
+      "HETE_AAL37299": "TIER_1A_HIGH_CONFIDENCE",
+      "HETE_Q8X1P4": "TIER_1B_NEEDS_REVIEW",
+      "KELCH_A0A090DCW7": "TIER_4A_REPEAT_ONLY_NO_NBD",
+      "TPR_B2B7X0": "TIER_4C_NO_NBD_NO_REPEAT_LOW_SIGNAL"
+    }
+  },
+  "runtime_preservation": {
+    "compared_version": "0.5.0a1",
+    "excluded_module": "src/funlr/__init__.py (version and package docstring only)",
+    "non_version_runtime_change": "One comment reworded; parsed syntax unchanged",
+    "python_modules_ast_identical": 48,
+    "runtime_files": 54,
+    "runtime_path_sha256_map_digest": "7ecf7f0b9983ae5452d992304078fc35b64decaaceae929edf06f68e5f41ba25"
+  },
+  "schema_version": 1,
+  "scope": "Public alpha preparation; no change to scientific or execution behavior from 0.5.0a1.",
+  "source_tests": {
+    "command": "PYTHONPATH=src python -m pytest tests -q -p no:cacheprovider",
+    "passed": 589,
+    "pytest": "9.1.1",
+    "python": "3.12.14",
+    "seconds": 163.6,
+    "skip_scope": [
+      "Two optional real-tool pytest demos, executed separately from the installed wheel",
+      "One optional external reference-data test"
+    ],
+    "skipped": 3,
+    "source_file_permissions": "0644",
+    "subtests_passed": 4,
+    "warning_scope": "Existing pandas future-downcasting warning",
+    "warnings": 1
+  },
+  "synthetic_demo": {
+    "completed_stages": 8,
+    "funlr_version": "0.5.0a2",
+    "positive_exonerate_alignment_rows": 1,
+    "resume_reused_stages": 8,
+    "status": "passed"
+  },
+  "version": "0.5.0a2"
+}

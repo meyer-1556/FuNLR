@@ -1,0 +1,24 @@
+# Place this file beside the unpacked inputs/, models/ and pfam/ directories.
+# These reference data are supplied separately, not included in the repository.
+sample:
+  sample_id: Psilocybe_cubensis_1
+  species_id: psicub_aus
+  assembly_version: post-orthofiller
+context:
+  profile: ILLUMINA
+inputs:
+  genome: inputs/input/Psilocybe_cubensis_1.genome.masked.fa
+  proteins: inputs/input/Psilocybe_cubensis_1.final.annotation.proteins.fa
+  gff3: inputs/input/Psilocybe_cubensis_1.final.annotation.gff3
+  eggnog: inputs/input/Psilocybe_cubensis_1.eggnog.annotations.tsv
+  annotations: inputs/input/Psilocybe_cubensis_1.final.annotation.annotations.txt
+databases:
+  pfam: pfam/Pfam-A.hmm
+  nbd_hmms: models/combined_hmms/NLR_NBD_combined.hmm
+  custom_hmms: models/combined_hmms/NLR_custom_combined.hmm
+  asm_hmms: models/combined_hmms/NLR_ASM_combined.hmm
+  effector_hmms: models/combined_hmms/NLR_effectors_combined.hmm
+  sensor_hmms: models/combined_hmms/NLR_sensors_combined.hmm
+execution:
+  cpu_threads: 8
+  output_dir: funlr-reference-run

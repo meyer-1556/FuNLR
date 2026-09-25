@@ -1,0 +1,11 @@
+include README.md LICENSE NOTICE CITATION.cff CHANGELOG.md CONTRIBUTING.md
+include install.py environment.yml Dockerfile Apptainer.def .dockerignore .gitignore
+recursive-include environments *.lock *.json *.md *.yml
+recursive-include docs *.md *.json
+recursive-include scripts *.py
+recursive-include examples *.py *.md *.json *.yaml *.tsv *.slurm *.fa *.faa *.gff3 *.annotations *.hmm
+recursive-include packaging *.md *.yaml *.sh *.py *.patch *.json COPYING
+recursive-include tests *.json *.py *.md *.txt *.fa *.faa *.fai *.tsv *.gff3 *.gff *.hmm *.annotations *.domtblout
+recursive-include tests/integration/shims *
+global-exclude *.py[cod]
+global-exclude .DS_Store

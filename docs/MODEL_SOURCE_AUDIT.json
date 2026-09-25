@@ -1,0 +1,506 @@
+{
+  "scope": "Read-only inspection of supplied models, build scripts, manifests, logs and curation lists. No external publication assets were fetched or build scripts executed.",
+  "verified_component_manifest": [
+    {
+      "file": "NLR_effectors_combined.hmm",
+      "recorded_md5": "ee0101016c16da61cb3d8121369efc00",
+      "observed_md5": "ee0101016c16da61cb3d8121369efc00",
+      "match": true,
+      "sha256": "ae5f7df4744da5d28dd36688535c0b9147cb420caa8af3c04da85a3db3d61862"
+    },
+    {
+      "file": "NLR_NBD_combined.hmm",
+      "recorded_md5": "860bdd842177c2f2c03de125bd92674e",
+      "observed_md5": "860bdd842177c2f2c03de125bd92674e",
+      "match": true,
+      "sha256": "230982ccb1e008aee682d9469eb525a407d007ec104ba5ebb287765b1f276433"
+    },
+    {
+      "file": "NLR_sensors_combined.hmm",
+      "recorded_md5": "9b13d32b77f3818c8412febd7371de25",
+      "observed_md5": "9b13d32b77f3818c8412febd7371de25",
+      "match": true,
+      "sha256": "1829aae31fba0739fcb2c525cf2c9e5d133d8098d2593d1ba9e67f18ae6a748a"
+    },
+    {
+      "file": "NLR_ASM_combined.hmm",
+      "recorded_md5": "e17f342d5285ac1e9da70a24c209749d",
+      "observed_md5": "e17f342d5285ac1e9da70a24c209749d",
+      "match": true,
+      "sha256": "bd23db2dbf9056e256d5aef92ea67e336dac2e2a16dbdf9c04069a737a875a7d"
+    }
+  ],
+  "blocks_identical_except_NAME": {
+    "NLR_ASM_combined.hmm": {
+      "groups": 0,
+      "extra_records": 0,
+      "examples": []
+    },
+    "NLR_NBD_combined.hmm": {
+      "groups": 0,
+      "extra_records": 0,
+      "examples": []
+    },
+    "NLR_custom_combined.hmm": {
+      "groups": 29,
+      "extra_records": 30,
+      "examples": [
+        {
+          "sha256_without_NAME_line": "5e9169bbf008e2025cb24ffeaa9b7f12ebdba12ae6e04bbfea5eb01c008a82b5",
+          "names": [
+            "SesA",
+            "SesA__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "cc3d11b0b01a7c8305a8a2d14f56beab2f98d93bfa90dc8a7526c7e15f0af699",
+          "names": [
+            "SNAP",
+            "SNAP__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "942614a88ef4258566f9d91c5043f10aed2ff1d7f228dc576b7e191672d62556",
+          "names": [
+            "SRP_TPR_like",
+            "SRP_TPR_like__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "2a89a0d33122837a43aed560e7a47d7dfb45e9585ff966fdc29ba3c25f0f4d18",
+          "names": [
+            "TAF6_C",
+            "TAF6_C__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "db2ac1c6e46094e34ce8e2d9a3785db4e5281086e973116d434ed522dd10df8d",
+          "names": [
+            "TPR_1",
+            "TPR_1__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "224c117a9e3d5af58561fc7e73f9cd52ec35dc15183dea7ca572bb0487dc4492",
+          "names": [
+            "TPR_10",
+            "TPR_10__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "1dd89cee60bf702393dfb4f6c41ffd2bab37d1a843a4bba35ad6114004c1ede4",
+          "names": [
+            "TPR_11",
+            "TPR_11__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "02c5d6a482ba060156636892bbf4f9ae8391cba53d37ebfbd7a38fd2929050e7",
+          "names": [
+            "TPR_12",
+            "TPR_12__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "27cefa0482b30ba14bc232f56e98ea67a1cf3fc0f55199cca20b1d1e25e6722a",
+          "names": [
+            "TPR_14",
+            "TPR_14__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "1e0f5ba455b0b565f1a29034212e5625fca5ea8dddc9e145c9709c206bedd23c",
+          "names": [
+            "TPR_15",
+            "TPR_15__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "3b92eb97bf2688bcac258a73d763dd014bc01357e2646ce89b9b63d6badd1d0f",
+          "names": [
+            "TPR_16",
+            "TPR_16__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "5d43fad2479be7ce3f319a8038c9de85e2e563e5f75cb176302ff16fca7b63fe",
+          "names": [
+            "TPR_17",
+            "TPR_17__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "82f7e4c8698d42914ab6f35d0fb30a7f45f4c789e6d128c40186c565e8c8a6a9",
+          "names": [
+            "TPR_19",
+            "TPR_19__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "fa301b5fa98d60001e093ff5ee68c91e58369056dbadca4e1c4d7c98ff070dbb",
+          "names": [
+            "TPR_2",
+            "TPR_2__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "740cdda00297e0f8b72f6c0a54d163963fedce5b797d246636427e88299e88ca",
+          "names": [
+            "TPR_20",
+            "TPR_20__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "e281729c47de92629ddf622f4461546f1920c6df9568ba293f8ec996c5548afc",
+          "names": [
+            "TPR_21",
+            "TPR_21__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4b58d0afba1c999f4711aed03d00adf1e9046677b89ba900a987b76fd67c95f0",
+          "names": [
+            "TPR_3",
+            "TPR_3__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "e8b682777f50db3638824a9082da93d2543ef0994583f4b4d5650a56681b8ad8",
+          "names": [
+            "TPR_4",
+            "TPR_4__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "33ac9e6782dae7093672c63abc04b41ba51ee833120dc2ee035c8b4918140196",
+          "names": [
+            "TPR_5",
+            "TPR_5__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "49199758d042fb4079fcd014dfba7a0c6b4a18022b42a82d2d06921a32669502",
+          "names": [
+            "TPR_6",
+            "TPR_6__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "27985bbcbc1907bde6624c389e0124b7e70d39c799691139736ffe2349714e9c",
+          "names": [
+            "TPR_7",
+            "TPR_7__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4a2e42d3e257169bb5d396c54aaba2f72969219c852e6665a9a7a6b181a47d86",
+          "names": [
+            "TPR_8",
+            "TPR_8__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "47dc1699e02a6e43a0cd6587416a3adb719e63b26a26dc68b5b81cf19b8077ea",
+          "names": [
+            "TPR_9",
+            "TPR_9__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "b0338fb066600f0f6fe162b25178e631ca6358d1d842a2a5ca2b3b52eb89fdad",
+          "names": [
+            "TPR_MLP1_2",
+            "TPR_MLP1_2__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "68a853294013a2596fe3e8441fefc1d05f4b45d14de46cb66fe726ed267838d5",
+          "names": [
+            "Utp13",
+            "Utp13__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "a4ce3a0ae79951424186bf1fc5a8e587b2b86a29c1dec0819f4e1a12ecd14187",
+          "names": [
+            "Utp21",
+            "Utp21__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4ce320b5c7b9aa6823a893eb79254239866839c2e53dce64900cdfbd72267880",
+          "names": [
+            "WD40",
+            "WD40__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "0acee0df603a0f58a42b6c4993b7f555ee933a4388212127bfa82dec184b067e",
+          "names": [
+            "WD40_4",
+            "WD40_4__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "eb631435f0b153f0fcaeac91ef7e0595929e8e0c0a8f0c4300fa6254ec17c4d8",
+          "names": [
+            "WD40_like",
+            "WD40_like__dup2",
+            "WD40_like__dup2__dup2"
+          ]
+        }
+      ]
+    },
+    "NLR_effectors_combined.hmm": {
+      "groups": 1,
+      "extra_records": 1,
+      "examples": [
+        {
+          "sha256_without_NAME_line": "5e9169bbf008e2025cb24ffeaa9b7f12ebdba12ae6e04bbfea5eb01c008a82b5",
+          "names": [
+            "SesA",
+            "SesA__dup2"
+          ]
+        }
+      ]
+    },
+    "NLR_sensors_combined.hmm": {
+      "groups": 28,
+      "extra_records": 29,
+      "examples": [
+        {
+          "sha256_without_NAME_line": "cc3d11b0b01a7c8305a8a2d14f56beab2f98d93bfa90dc8a7526c7e15f0af699",
+          "names": [
+            "SNAP",
+            "SNAP__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "942614a88ef4258566f9d91c5043f10aed2ff1d7f228dc576b7e191672d62556",
+          "names": [
+            "SRP_TPR_like",
+            "SRP_TPR_like__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "2a89a0d33122837a43aed560e7a47d7dfb45e9585ff966fdc29ba3c25f0f4d18",
+          "names": [
+            "TAF6_C",
+            "TAF6_C__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "db2ac1c6e46094e34ce8e2d9a3785db4e5281086e973116d434ed522dd10df8d",
+          "names": [
+            "TPR_1",
+            "TPR_1__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "224c117a9e3d5af58561fc7e73f9cd52ec35dc15183dea7ca572bb0487dc4492",
+          "names": [
+            "TPR_10",
+            "TPR_10__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "1dd89cee60bf702393dfb4f6c41ffd2bab37d1a843a4bba35ad6114004c1ede4",
+          "names": [
+            "TPR_11",
+            "TPR_11__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "02c5d6a482ba060156636892bbf4f9ae8391cba53d37ebfbd7a38fd2929050e7",
+          "names": [
+            "TPR_12",
+            "TPR_12__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "27cefa0482b30ba14bc232f56e98ea67a1cf3fc0f55199cca20b1d1e25e6722a",
+          "names": [
+            "TPR_14",
+            "TPR_14__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "1e0f5ba455b0b565f1a29034212e5625fca5ea8dddc9e145c9709c206bedd23c",
+          "names": [
+            "TPR_15",
+            "TPR_15__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "3b92eb97bf2688bcac258a73d763dd014bc01357e2646ce89b9b63d6badd1d0f",
+          "names": [
+            "TPR_16",
+            "TPR_16__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "5d43fad2479be7ce3f319a8038c9de85e2e563e5f75cb176302ff16fca7b63fe",
+          "names": [
+            "TPR_17",
+            "TPR_17__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "82f7e4c8698d42914ab6f35d0fb30a7f45f4c789e6d128c40186c565e8c8a6a9",
+          "names": [
+            "TPR_19",
+            "TPR_19__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "fa301b5fa98d60001e093ff5ee68c91e58369056dbadca4e1c4d7c98ff070dbb",
+          "names": [
+            "TPR_2",
+            "TPR_2__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "740cdda00297e0f8b72f6c0a54d163963fedce5b797d246636427e88299e88ca",
+          "names": [
+            "TPR_20",
+            "TPR_20__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "e281729c47de92629ddf622f4461546f1920c6df9568ba293f8ec996c5548afc",
+          "names": [
+            "TPR_21",
+            "TPR_21__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4b58d0afba1c999f4711aed03d00adf1e9046677b89ba900a987b76fd67c95f0",
+          "names": [
+            "TPR_3",
+            "TPR_3__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "e8b682777f50db3638824a9082da93d2543ef0994583f4b4d5650a56681b8ad8",
+          "names": [
+            "TPR_4",
+            "TPR_4__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "33ac9e6782dae7093672c63abc04b41ba51ee833120dc2ee035c8b4918140196",
+          "names": [
+            "TPR_5",
+            "TPR_5__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "49199758d042fb4079fcd014dfba7a0c6b4a18022b42a82d2d06921a32669502",
+          "names": [
+            "TPR_6",
+            "TPR_6__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "27985bbcbc1907bde6624c389e0124b7e70d39c799691139736ffe2349714e9c",
+          "names": [
+            "TPR_7",
+            "TPR_7__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4a2e42d3e257169bb5d396c54aaba2f72969219c852e6665a9a7a6b181a47d86",
+          "names": [
+            "TPR_8",
+            "TPR_8__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "47dc1699e02a6e43a0cd6587416a3adb719e63b26a26dc68b5b81cf19b8077ea",
+          "names": [
+            "TPR_9",
+            "TPR_9__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "b0338fb066600f0f6fe162b25178e631ca6358d1d842a2a5ca2b3b52eb89fdad",
+          "names": [
+            "TPR_MLP1_2",
+            "TPR_MLP1_2__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "68a853294013a2596fe3e8441fefc1d05f4b45d14de46cb66fe726ed267838d5",
+          "names": [
+            "Utp13",
+            "Utp13__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "a4ce3a0ae79951424186bf1fc5a8e587b2b86a29c1dec0819f4e1a12ecd14187",
+          "names": [
+            "Utp21",
+            "Utp21__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "4ce320b5c7b9aa6823a893eb79254239866839c2e53dce64900cdfbd72267880",
+          "names": [
+            "WD40",
+            "WD40__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "0acee0df603a0f58a42b6c4993b7f555ee933a4388212127bfa82dec184b067e",
+          "names": [
+            "WD40_4",
+            "WD40_4__dup2"
+          ]
+        },
+        {
+          "sha256_without_NAME_line": "eb631435f0b153f0fcaeac91ef7e0595929e8e0c0a8f0c4300fa6254ec17c4d8",
+          "names": [
+            "WD40_like",
+            "WD40_like__dup2",
+            "WD40_like__dup2__dup2"
+          ]
+        }
+      ]
+    }
+  },
+  "reported_lineage": {
+    "NLR_effectors_combined.hmm": "pcbi.1010787.s008.hmm+Bonometti_Nterm(S15 curated)",
+    "NLR_NBD_combined.hmm": "Sordariales_ND-domains.hmm+6x(Dryka_FASTA\u2192MAFFT\u2192hmmbuild)+Woj2022_taxsplit(NACHT/NB-ARC/AAA/KAP_NTPASE)",
+    "NLR_sensors_combined.hmm": "Bonometti_Sensors(S12 non-NB curated; fallback full Cterm-Nterm HMM if empty)",
+    "NLR_ASM_combined.hmm": "pcbi.1010787.s014.hmm+pcbi.1010787.s020.hmm+pcbi.1010787.s015.hmm"
+  },
+  "historical_reconstruction_completed": false,
+  "public_redistribution_permission_established": false,
+  "sensor_count_evidence": {
+    "log": "model_provenance/custom_combined_hmms/logs/slurm-combine_hmms-44292113.out",
+    "curated_sensor_extract_reported": 78,
+    "final_sensor_profiles_reported_and_observed": 108,
+    "optional_s013_addition_reported_in_final_manifest": false,
+    "note": "The extra records are not explained by the short manifest description. Most have model text identical except NAME to another retained profile."
+  },
+  "possible_stale_intermediates": {
+    "status": "Source-based inference; historical cause not established",
+    "script": "model_provenance/custom_combined_hmms/scripts/combine_hmms2.sh",
+    "lines": [
+      255,
+      301
+    ],
+    "observation": "dedup_and_rename_hmm creates a persistent uniq directory, copies current selected models into it without clearing old entries, then concatenates every *.hmm in that directory. split_hmm_models_strict clears models, not uniq. Reusing a work directory can retain obsolete models.",
+    "action": "Keep supplied model bytes unchanged. Any future clean rebuild requires archived source inputs, fresh intermediates, profile-level identity mapping and scientific validation."
+  },
+  "source_sha256": {
+    "combined_hmms/manifest.tsv": "2a964bb999fee51f42c60d8b60e983e3acd0fb403c888fc12f5bc4c97c3dfb7c",
+    "combined_hmms/README.combine_hmms.txt": "1f8f7fdefb021512ec2a869efd120623264d1406caf3f6fd2159a652db0c938d",
+    "model_provenance/custom_combined_hmms/scripts/combine_hmms2.sh": "7abec9e7dfec3d451a6d0c2ecd1d10edbf4b8bafac16899a53e099491b43e0c3",
+    "model_provenance/custom_combined_hmms/scripts/woj_nbd_hmms2.sh": "804a92794bcd4e1a98cc86c269dc1a0339732cc0e60172d10a3696845984ed80",
+    "model_provenance/custom_combined_hmms/logs/slurm-combine_hmms-44292113.out": "c4d88d7c9c7d6b5f8eca3b3d55f060cf2252a37c2bfaefdbc613394c2ffa6439",
+    "model_provenance/Wojciechowski_2022/nod_hmms_from_s002/run_signature.txt": "59016eb30f2f043f81229120bb9fdf420c54f25d07b7142e279e378719cb070c"
+  },
+  "schema_version": 1,
+  "snapshot_id": "funlr-reference-models-1"
+}

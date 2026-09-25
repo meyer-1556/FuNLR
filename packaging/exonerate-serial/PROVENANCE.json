@@ -1,0 +1,105 @@
+{
+  "source": {
+    "version": "2.4.0",
+    "url": "https://ftp.ebi.ac.uk/pub/software/vertebrategenomics/exonerate/exonerate-2.4.0.tar.gz",
+    "sha256": "f849261dc7c97ef1f15f222e955b0d3daf994ec13c9db7766f1ac7e77baa4042",
+    "license": "GPL-3.0-only"
+  },
+  "patch": {
+    "file": "disable-pthreads-build.patch",
+    "sha256": "f50780509bc3b43d3e911de099d75f8fd8aa23f9db68d0a1d01f5f5193a6bb11",
+    "changes": [
+      "Guard pthread-only unused callback in serial builds",
+      "Invoke the job_func parameter in the serial submission branch"
+    ]
+  },
+  "configure": [
+    "--disable-pthreads",
+    "--disable-assert",
+    "--disable-utilities"
+  ],
+  "make": [
+    "-j1"
+  ],
+  "validation": {
+    "status": "passed_bounded_runtime_checks",
+    "platform": "macOS arm64",
+    "date": "2026-09-09",
+    "glib_version": "2.88.3",
+    "lock_only_installation_validated": false,
+    "linux_build_validated": false,
+    "container_build_validated": false,
+    "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+    "pkgconf_version": "3.0.7",
+    "source_archive_sha256_verified": true,
+    "build_script_fresh_download_build_install_passed": true,
+    "serial_binary_sha256": "64aaf0a37971f176f16379fc1a128b9624f3c626df8d835e370280d4668bf24a",
+    "initial_serial_binary_sha256": "f5d13e2781a4984e6bdf85a6a52060fc30c1f181b05a9c85b4172d504e28dd64",
+    "repeat_checks": {
+      "cases": 2,
+      "repeats_per_case": 3,
+      "successful_commands_per_binary": 6,
+      "binaries_checked": 2,
+      "all_exit_codes_zero": true,
+      "repeated_stdout_identical_per_case": true,
+      "positive_scientific_stdout_matches_successful_stock_run": true,
+      "comparison_excludes": [
+        "Command line metadata",
+        "Hostname metadata"
+      ],
+      "positive_vulgar_rows": 1,
+      "positive_gff_rows": 69
+    },
+    "stock_address_sanitizer": {
+      "heap_use_after_free_reproduced": true,
+      "read_in": "Alphabet_destroy called by Match_destroy_all during Argument_destroy",
+      "previously_freed_in": "FastaDB_close during Analysis_destroy",
+      "mechanistic_root_cause_proven": false,
+      "trace_sha256": "6fd622e96ae5ba6cc2f0180815a24b02631befc09bacfa081112f9e6da204fa5",
+      "tested_instrumented_source_patch": null
+    },
+    "serial_address_sanitizer": {
+      "status": "passed_bounded_runtime_checks",
+      "cases": 2,
+      "repeats_per_case": 3,
+      "successful_commands": 6,
+      "all_exit_codes_zero": true,
+      "address_sanitizer_errors_observed": false,
+      "positive_scientific_stdout_matches_successful_stock_run": true,
+      "compiled_models_enabled": false,
+      "pthreads_enabled": false,
+      "binary_sha256": "fd6e8a8aeab690a61c6db4a3204c479b62a82fa7214811e77b8c14d7a7e950b7",
+      "flags": [
+        "-O1",
+        "-g",
+        "-fsanitize=address",
+        "-fno-omit-frame-pointer",
+        "-fno-strict-aliasing",
+        "upstream default release flags appended by configure"
+      ],
+      "limitations": "These commands do not prove universal race freedom or correctness. The exact mechanism of the stock cleanup error remains unproven."
+    },
+    "original_source_files_changed": [
+      "src/general/jobqueue.c"
+    ]
+  },
+  "build_flags": {
+    "initial_CFLAGS": "-O2 -g -fno-strict-aliasing",
+    "upstream_configure_adds": [
+      "-DG_DISABLE_ASSERT",
+      "-O3",
+      "-finline-functions",
+      "-D_LARGEFILE_SOURCE",
+      "-D_FILE_OFFSET_BITS=64"
+    ],
+    "linker_rpath": "GLib prefix /lib",
+    "pthreads_enabled": false,
+    "compiled_models_enabled": true
+  },
+  "licenses": {
+    "upstream_copying_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "build_py": "MIT",
+    "source_and_patch": "GPL-3.0-only",
+    "upstream_license_basis": "Original README and source headers specify GNU GPL version 3; conservative version-3-only designation."
+  }
+}

@@ -1,0 +1,8 @@
+#query	seed_ortholog	evalue	score	eggnog_ogs	max_annot_lvl	COG_category	Description	Preferred_name	GOs	EC	KEGG_ko
+HETE_AAL37299	-	0	0	-	-	-	Beta transducin-like protein HET-E (NACHT and WD40 repeat containing)	-	-	-	-
+HETE_Q8X1P4	-	0	0	-	-	-	Beta transducin-like protein HET-E (NACHT and WD40 repeat containing)	-	-	-	-
+HETE_A7IQW3	-	0	0	-	-	-	HET-E protein (NACHT and WD40 repeat containing)	-	-	-	-
+KELCH_A0A090DCW7	-	0	0	-	-	-	Kelch repeat-containing protein	-	-	-	-
+TPR_B2B7X0	-	0	0	-	-	-	Tetratricopeptide SHNi-TPR domain-containing protein	-	-	-	-
+ORC2_B2B6T2	-	0	0	-	-	-	Origin recognition complex subunit 2	-	-	-	-
+ATG1_Q3ZDQ4	-	0	0	-	-	-	Serine/threonine-protein kinase ATG1	-	-	-	-

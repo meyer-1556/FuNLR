@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "synthetic-harness-example",
+  "unit": "protein",
+  "prediction_set": "hand-written demonstration calls",
+  "input_sha256": "e9905f8517301392f5b97b21558885668df1342464012f7c8aeb40c9e2ef35ea",
+  "exhaustive_labels": false,
+  "synthetic": true,
+  "records": [
+    {
+      "protein_id": "positive_a",
+      "expected_call": "positive",
+      "evidence_category": "synthetic",
+      "evidence_source": "Hand-written software test; no biological claim",
+      "reference_present": true,
+      "training_overlap": "yes"
+    },
+    {
+      "protein_id": "positive_b",
+      "expected_call": "positive",
+      "evidence_category": "synthetic",
+      "evidence_source": "Hand-written software test; no biological claim",
+      "reference_present": true,
+      "training_overlap": "no"
+    },
+    {
+      "protein_id": "near_neighbor",
+      "expected_call": "negative",
+      "evidence_category": "synthetic",
+      "evidence_source": "Hand-written software test; no biological claim",
+      "reference_present": true,
+      "training_overlap": "no"
+    },
+    {
+      "protein_id": "unresolved",
+      "expected_call": "uncertain",
+      "evidence_category": "synthetic",
+      "evidence_source": "Hand-written software test; no biological claim",
+      "reference_present": true,
+      "training_overlap": "unknown"
+    },
+    {
+      "protein_id": "absent_positive",
+      "expected_call": "positive",
+      "evidence_category": "synthetic",
+      "evidence_source": "Hand-written software test; no biological claim",
+      "reference_present": false,
+      "training_overlap": "unknown"
+    }
+  ]
+}

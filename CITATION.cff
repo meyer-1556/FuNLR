@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the FuNLR project and the external tools and profile resources used."
+title: "FuNLR: Fungal NLR Discovery"
+version: 0.5.0a2
+date-released: 2026-09-24
+license: MIT
+authors:
+  - family-names: Meyer
+    given-names: Matthew G.E.
+    affiliation: "The Ohio State University"
+  - family-names: Slot
+    given-names: Jason C.
+    affiliation: "The Ohio State University"
+repository-code: "https://github.com/meyer-1556/FuNLR"

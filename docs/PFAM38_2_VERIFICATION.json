@@ -1,0 +1,9 @@
+{
+  "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/Pfam-A.hmm.gz",
+  "compressed_md5": "7ab3c4e215d0daaea3004e37c4e24f8a",
+  "upstream_md5_verified": true,
+  "uncompressed_bytes": 2246909846,
+  "uncompressed_sha256": "4b0da6399b97d2b23329de82190b2e5705bde1dea4cb2d028a52712d5966739e",
+  "release_record": "Pfam release       : 38.2\nPfam-A families    : 30134\nDate               : 2026-01\nBased on UniProtKB : 2025_03\n",
+  "matches_reference_snapshot": true
+}

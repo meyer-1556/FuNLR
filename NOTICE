@@ -1,0 +1,21 @@
+FuNLR's original code is distributed under the MIT license. See LICENSE.
+
+Incorporated Python stage/parser, plotting and test components carry BSD-3-Clause
+terms. Their copyright notice and conditions are retained verbatim in
+src/funlr/THIRD_PARTY_LICENSE.txt and continue to apply to those portions.
+
+The scientific workflow was developed by Matthew G.E. Meyer and Jason C. Slot.
+External bioinformatics tools, dependency packages and profile databases retain
+their own licenses and citation requirements. The MIT code license does not
+relicense them. Production fungal HMM libraries are not bundled in this source.
+
+A public-sequence hybrid fixture is included in examples/demo and as package
+data. Its UniProt data retain CC-BY-4.0 attribution; its Pfam profile subset is
+CC0. NCBI sequence reuse follows the policy identified in the fixture notices.
+See src/funlr/data/public_sequences/DATA_LICENSES.md and PROVENANCE.json for
+accessions, checksums, terms and modifications.
+
+The optional Exonerate serial-build patch under packaging/exonerate-serial
+modifies separately obtained GPLv3 Exonerate source. Its applicable upstream
+terms are supplied there in COPYING. The original Python build helper is MIT
+licensed. No Exonerate source archive or executable is bundled in the wheel.

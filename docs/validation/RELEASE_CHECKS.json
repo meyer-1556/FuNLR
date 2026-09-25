@@ -1,0 +1,297 @@
+{
+  "checked_on": "2026-09-12",
+  "cohort": {
+    "asset_manifest": {
+      "schema_version": 1,
+      "sha256": {
+        "DATA_LICENSES.md": "7c2b12578688b743ad9a0cafc850961c5626256c84846ca447a5bae1c1c8c72b",
+        "PROVENANCE.json": "3465051e18f3687618b08e8090a758de98fa34bb21116d757fc189d59eb5815c",
+        "README.md": "5820e44ad9981cd394b1e93fab0d2f5b1af77d47fd2b4cbd0ed029be0beeaad8",
+        "annotation.gff3": "2248a99ab61f974cec9057d538397fae34abf210d96bfa536e0ba3d59a3efe7c",
+        "config.yaml": "5d2629136df723c3e3a3eaee933f4ca967afdf63507fe50c2e9f481fae55af8f",
+        "db/nbd.hmm": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+        "db/pfam_mini.hmm": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+        "emapper.annotations": "c6ddb03610c12f6228d92b2acba8e6f5fa2c92b2e4480afcfde677181409b751",
+        "genome.fa": "957af612ef0d37423b91011a6cb8124384b79dc828607089d972d1b7ff6adbda",
+        "proteins.faa": "8805d7a23ece92ef581aa86388980d93de2c55cf4a52e4b1625888e33adee917"
+      },
+      "source": "examples/demo"
+    },
+    "cohort_integrity": "VERIFIED",
+    "dry_run_wrote_nothing": true,
+    "funlr_version": "0.5.0a1",
+    "html_reports": 2,
+    "html_review_rows_matched": {
+      "fixture_A": 3,
+      "fixture_B": 3
+    },
+    "installed_self_test": {
+      "ok": true,
+      "production_models": "NOT_REQUESTED",
+      "public_fixture": "VERIFIED"
+    },
+    "purpose": "Two copies of a constructed public fixture; workflow validation, not biological benchmarking.",
+    "resume_preserved_both_stage_states": true,
+    "sample_sheet_sha256": "a15faa794a3b3c032ca8b64be0a527068c75b526351e55177e333f6963b736cf",
+    "samples": {
+      "fixture_A": {
+        "candidate_count": 6,
+        "intron_bp": 49,
+        "spliced_locus_copies": 2,
+        "stage6_comprehensive_refine_count": 3,
+        "stage6_refine_count": 1,
+        "strict_candidate_count": 3,
+        "tiers": {
+          "ATG1_Q3ZDQ4": "TIER_4A_REPEAT_ONLY_NO_NBD",
+          "HETE_A7IQW3": "TIER_1A_HIGH_CONFIDENCE",
+          "HETE_AAL37299": "TIER_1A_HIGH_CONFIDENCE",
+          "HETE_Q8X1P4": "TIER_1B_NEEDS_REVIEW",
+          "KELCH_A0A090DCW7": "TIER_4A_REPEAT_ONLY_NO_NBD",
+          "TPR_B2B7X0": "TIER_4C_NO_NBD_NO_REPEAT_LOW_SIGNAL"
+        }
+      },
+      "fixture_B": {
+        "candidate_count": 6,
+        "intron_bp": 49,
+        "spliced_locus_copies": 2,
+        "stage6_comprehensive_refine_count": 3,
+        "stage6_refine_count": 1,
+        "strict_candidate_count": 3,
+        "tiers": {
+          "ATG1_Q3ZDQ4": "TIER_4A_REPEAT_ONLY_NO_NBD",
+          "HETE_A7IQW3": "TIER_1A_HIGH_CONFIDENCE",
+          "HETE_AAL37299": "TIER_1A_HIGH_CONFIDENCE",
+          "HETE_Q8X1P4": "TIER_1B_NEEDS_REVIEW",
+          "KELCH_A0A090DCW7": "TIER_4A_REPEAT_ONLY_NO_NBD",
+          "TPR_B2B7X0": "TIER_4C_NO_NBD_NO_REPEAT_LOW_SIGNAL"
+        }
+      }
+    },
+    "stages_completed_per_sample": 8,
+    "status": "passed",
+    "tsv_compatibility": [
+      "mixed-case headers",
+      "masked genome fallback",
+      "primary genome precedence",
+      "NLR_PROFILE alias",
+      "per-sample DISCOVERY_MODE"
+    ]
+  },
+  "external_toolchain_scope": "Existing real executables supplied on PATH. Exonerate uses the documented serial-build workaround. This is not a clean Conda-lock installation or a container execution.",
+  "external_tools": {
+    "exonerate": {
+      "sha256": "64aaf0a37971f176f16379fc1a128b9624f3c626df8d835e370280d4668bf24a",
+      "version_lines": [
+        "exonerate from exonerate version 2.4.0",
+        "Using glib version 2.88.3"
+      ]
+    },
+    "gffread": {
+      "sha256": "5c715a7819eea1ef685014e8a041870dc977880620d558a102746d74c6775787",
+      "version_lines": [
+        "0.12.7"
+      ]
+    },
+    "hmmbuild": {
+      "sha256": "5db6c77cabe05148323d3d5bb11dc40092db689665de45298ad0432b6425e443",
+      "version_lines": [
+        "# hmmbuild :: profile HMM construction from multiple sequence alignments",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "hmmfetch": {
+      "sha256": "6b818ef14bf2f2df0edeb6dec21bd0a13175631515c1fc17b1df3bf4978cd40f",
+      "version_lines": [
+        "# hmmfetch :: retrieve profile HMM(s) from a file",
+        "# Easel 0.49 (Aug 2023)"
+      ]
+    },
+    "hmmpress": {
+      "sha256": "fae530291c3b45c0aefaed77f0ae117dca276d961d2d4cf418b765030a05141d",
+      "version_lines": [
+        "# hmmpress :: prepare an HMM database for faster hmmscan searches",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "hmmscan": {
+      "sha256": "f314a324ca2765ff2b10cbe85f584d304670778f49275093fca0a842eaf2adae",
+      "version_lines": [
+        "# hmmscan :: search sequence(s) against a profile database",
+        "# HMMER 3.4 (Aug 2023); http://hmmer.org/"
+      ]
+    },
+    "miniprot": {
+      "sha256": "d3486e710325ea0589bf0bfbb1c06d5a6796e051018b1f48330907c7e366dff7",
+      "version_lines": [
+        "0.18-r281"
+      ]
+    },
+    "samtools": {
+      "sha256": "444ce4ab72e2b305742c7165633c11083be411ec2b0a64b8992733a05f7df313",
+      "version_lines": [
+        "samtools 1.21",
+        "Using htslib 1.21"
+      ]
+    },
+    "seqkit": {
+      "sha256": "8b3a229fcad8a3bdcc25c38680b2058b859d293121554f106ae41fc38f2c0711",
+      "version_lines": [
+        "seqkit v2.12.0"
+      ]
+    }
+  },
+  "input_fixture_identity": {
+    "schema_version": 1,
+    "sha256": {
+      "DATA_LICENSES.md": "7c2b12578688b743ad9a0cafc850961c5626256c84846ca447a5bae1c1c8c72b",
+      "PROVENANCE.json": "3465051e18f3687618b08e8090a758de98fa34bb21116d757fc189d59eb5815c",
+      "README.md": "5820e44ad9981cd394b1e93fab0d2f5b1af77d47fd2b4cbd0ed029be0beeaad8",
+      "annotation.gff3": "2248a99ab61f974cec9057d538397fae34abf210d96bfa536e0ba3d59a3efe7c",
+      "config.yaml": "5d2629136df723c3e3a3eaee933f4ca967afdf63507fe50c2e9f481fae55af8f",
+      "db/nbd.hmm": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+      "db/pfam_mini.hmm": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+      "emapper.annotations": "c6ddb03610c12f6228d92b2acba8e6f5fa2c92b2e4480afcfde677181409b751",
+      "genome.fa": "957af612ef0d37423b91011a6cb8124384b79dc828607089d972d1b7ff6adbda",
+      "proteins.faa": "8805d7a23ece92ef581aa86388980d93de2c55cf4a52e4b1625888e33adee917"
+    },
+    "source": "examples/demo"
+  },
+  "installed_commands": {
+    "benchmark": {
+      "metrics": {
+        "positive_recovery": 0.5,
+        "precision": null,
+        "specificity": null
+      },
+      "passed": true
+    },
+    "input_qc": {
+      "passed": true
+    },
+    "model_inventory": {
+      "passed": true,
+      "profile_counts": [
+        2,
+        16
+      ]
+    },
+    "status": {
+      "integrity": "VERIFIED",
+      "passed": true
+    }
+  },
+  "installed_evidence_exports": {
+    "cohort_A": {
+      "accepted_exported_segments": 3,
+      "all_segment_sequences_coordinates_and_hashes_match": true,
+      "evidence_mirrors_match": true,
+      "input_qc_present": true,
+      "recorded_outputs": "VERIFIED",
+      "reported_hits": 3
+    },
+    "cohort_B": {
+      "accepted_exported_segments": 3,
+      "all_segment_sequences_coordinates_and_hashes_match": true,
+      "evidence_mirrors_match": true,
+      "input_qc_present": true,
+      "recorded_outputs": "VERIFIED",
+      "reported_hits": 3
+    },
+    "public": {
+      "accepted_exported_segments": 3,
+      "all_segment_sequences_coordinates_and_hashes_match": true,
+      "evidence_mirrors_match": true,
+      "input_qc_present": true,
+      "recorded_outputs": "VERIFIED",
+      "reported_hits": 3
+    },
+    "synthetic": {
+      "accepted_exported_segments": 3,
+      "all_segment_sequences_coordinates_and_hashes_match": true,
+      "evidence_mirrors_match": true,
+      "input_qc_present": true,
+      "recorded_outputs": "VERIFIED",
+      "reported_hits": 3
+    }
+  },
+  "installed_package": {
+    "fresh_python_environment": true,
+    "outside_source_tree": true,
+    "package_build": "wheel and sdist",
+    "pip_check": "PASSED",
+    "runtime_identity": {
+      "file_count": 54,
+      "scope": "Sorted relative-path to SHA256 map for installed package .py, .R and .json files; excludes bytecode",
+      "sha256": "928d941b2539a669495db8d2e7fa0d676f7e26a8518264887c970c0681d053c6"
+    },
+    "twine_check": "PASSED",
+    "wheel_sha256": "1c2f949ecdbd547428caefad779d5fbb1cc29c09eaaf6ef355e6f84837ff606d"
+  },
+  "not_established": [
+    "No new full-genome native pipeline execution for this release",
+    "No independent biological benchmark: bundled panels/demos are synthetic or constructed",
+    "Fresh locked Conda environments and Docker/Apptainer executions not validated in this session",
+    "Hosted CI not executed locally; Conda packages and OCI images not published",
+    "Production model training history and redistribution remain incomplete"
+  ],
+  "platform": {
+    "machine": "arm64",
+    "release": "23.6.0",
+    "system": "Darwin"
+  },
+  "public_demo": {
+    "candidate_count": 6,
+    "completed_stages": 8,
+    "funlr_version": "0.5.0a1",
+    "intron_bp": 49,
+    "purpose": "Public-sequence hybrid installation example; NOT reference parity or independent biological validation.",
+    "resume_reused_stages": 8,
+    "spliced_locus_copies": 2,
+    "stage6_comprehensive_refine_count": 3,
+    "stage6_refine_count": 1,
+    "status": "passed",
+    "strict_candidate_count": 3,
+    "tiers": {
+      "ATG1_Q3ZDQ4": "TIER_4A_REPEAT_ONLY_NO_NBD",
+      "HETE_A7IQW3": "TIER_1A_HIGH_CONFIDENCE",
+      "HETE_AAL37299": "TIER_1A_HIGH_CONFIDENCE",
+      "HETE_Q8X1P4": "TIER_1B_NEEDS_REVIEW",
+      "KELCH_A0A090DCW7": "TIER_4A_REPEAT_ONLY_NO_NBD",
+      "TPR_B2B7X0": "TIER_4C_NO_NBD_NO_REPEAT_LOW_SIGNAL"
+    }
+  },
+  "python": "3.12.14",
+  "python_dependencies": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.8",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  },
+  "schema_version": 1,
+  "source_tests": {
+    "command": "PYTHONPATH=src python -m pytest tests -q -p no:cacheprovider",
+    "passed": 589,
+    "pytest": "9.1.1",
+    "python": "3.12.14",
+    "seconds": 144.63,
+    "skip_scope": [
+      "Two optional pytest real-tool demos, executed separately from the installed wheel",
+      "One optional external reference-data test"
+    ],
+    "skipped": 3,
+    "source_file_permissions": "0644",
+    "status": "PASSED",
+    "subtests_passed": 4,
+    "warning_scope": "Existing pandas fillna future downcasting warning under the pinned pandas version",
+    "warnings": 1
+  },
+  "synthetic_demo": {
+    "completed_stages": 8,
+    "funlr_version": "0.5.0a1",
+    "positive_exonerate_alignment_rows": 1,
+    "purpose": "Synthetic real-tool installation test; NOT biological validation.",
+    "resume_reused_stages": 8,
+    "status": "passed"
+  },
+  "version": "0.5.0a1"
+}
