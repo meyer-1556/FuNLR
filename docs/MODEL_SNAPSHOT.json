@@ -1,0 +1,40 @@
+{
+  "description": "Fixed reference model libraries; hashes establish this snapshot, not a complete rebuild from original sequence sources.",
+  "custom_recipe": "NLR_effectors_combined.hmm bytes followed immediately by NLR_sensors_combined.hmm bytes",
+  "custom_recipe_verified_byte_identical": true,
+  "public_redistribution_status": "not established by this handoff",
+  "libraries": [
+    {
+      "file": "NLR_ASM_combined.hmm",
+      "bytes": 458479,
+      "profiles": 39,
+      "sha256": "bd23db2dbf9056e256d5aef92ea67e336dac2e2a16dbdf9c04069a737a875a7d"
+    },
+    {
+      "file": "NLR_NBD_combined.hmm",
+      "bytes": 4973473,
+      "profiles": 41,
+      "sha256": "230982ccb1e008aee682d9469eb525a407d007ec104ba5ebb287765b1f276433"
+    },
+    {
+      "file": "NLR_custom_combined.hmm",
+      "bytes": 7331510,
+      "profiles": 127,
+      "sha256": "d0ebec72a6092276f4cc16229869d5f6787de5f3949c54661d125998d68954e7"
+    },
+    {
+      "file": "NLR_effectors_combined.hmm",
+      "bytes": 1560696,
+      "profiles": 19,
+      "sha256": "ae5f7df4744da5d28dd36688535c0b9147cb420caa8af3c04da85a3db3d61862"
+    },
+    {
+      "file": "NLR_sensors_combined.hmm",
+      "bytes": 5770814,
+      "profiles": 108,
+      "sha256": "1829aae31fba0739fcb2c525cf2c9e5d133d8098d2593d1ba9e67f18ae6a748a"
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_id": "funlr-reference-models-1"
+}

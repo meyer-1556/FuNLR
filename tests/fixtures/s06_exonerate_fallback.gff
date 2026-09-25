@@ -1,0 +1,2 @@
+ctg3	exonerate:protein2genome:local	gene	10	99	50	+	.	XYZ123 extra tokens
+ctg4	exonerate:protein2genome:local	gene	bad	99	50	+	.	sequence p4 ;

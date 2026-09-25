@@ -1,0 +1,3 @@
+SAMPLE_ID	SPECIES_ID	ASSEMBLY_PROFILE	GENOME_PATH	PROTEINS_PATH	GFF3_PATH	EGGNOG_PATH	PLOIDY
+demo_a	podospora_anserina_demo	ILLUMINA	../demo/genome.fa	../demo/proteins.faa	../demo/annotation.gff3	../demo/emapper.annotations	unknown
+demo_b	podospora_anserina_demo	ILLUMINA	../demo/genome.fa	../demo/proteins.faa	../demo/annotation.gff3	../demo/emapper.annotations	unknown

@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-09-12T12:18:28.268541+00:00",
+  "scope": "Read-only evidence export replay on an existing completed native run; no pipeline tools rerun.",
+  "counts": {
+    "accepted_reported_hits": 1397,
+    "evidence_ids": 1148,
+    "exported_segments": 1397,
+    "final_report_rows": 258,
+    "original_final_candidates": 257,
+    "reported_hits": 5918,
+    "review_or_excluded_ids": 1141,
+    "strict_report_rows": 55,
+    "unassessed_reported_hits": 0
+  },
+  "segment_status_counts": {
+    "EXPORTED": 1397,
+    "NOT_ACCEPTED_BY_RECORDED_FILTERS": 4521
+  },
+  "qc_reconciliation": [
+    {
+      "matches": true,
+      "metric": "n_total_candidates",
+      "observed_value": 257,
+      "recorded_value": "257"
+    },
+    {
+      "matches": true,
+      "metric": "n_strict_candidates_combined",
+      "observed_value": 55,
+      "recorded_value": "55"
+    }
+  ],
+  "scan_status": {
+    "note": "Recorded Stage 1 execution status. An empty hit table can reflect a disabled or uncompleted optional scan; it does not establish biological absence.",
+    "pfam_nbd_completed": true,
+    "pfam_nbd_requested": true
+  },
+  "source_files_size_and_mtime_unchanged": 508,
+  "all_exported_segments_match_scanned_proteins_and_hashes": true,
+  "no_rejected_or_unknown_hit_exported": true,
+  "availability": "COMPLETE",
+  "warnings": [],
+  "outputs": {
+    "candidate_evidence.tsv": "3a2d2c9d410086006aa02a7bcf378b1204017f1a9aa73f198f98f4d5aa0f3888",
+    "review_and_exclusions.tsv": "500eaae06d268d226c72fc5ede019cc600a41a2c172a3d45aab7bfb154f0c418",
+    "nbd_hit_evidence.tsv": "fe30de82e03d6d2859a986f800b3a7ece36f16e084e564ec0ea0643168ca95c7",
+    "nbd_aligned_segments.faa": "d39a16bdd3bed6594bcfc957ff76e236c565970e3af27c12227a20fec33e5c2f",
+    "evidence_summary.json": "afdcfe8786f9030bcccd697fea31181e2b5d29d246885b38a3f671ec167444a6"
+  },
+  "implementation_sha256": {
+    "src/funlr/evidence.py": "14c50acf2288a89bd26aa5ec9218c68d6ac6b7564f4d663c61cd4c517d16d5b7",
+    "src/funlr/stages/stage7_finalize.py": "4a2db2689f16a40b66ddd16fd3da750b258950dd384afdcb42446e3dfb3154b9",
+    "src/funlr/report.py": "a01c099def46e07fce72b627163d24b43e574fc4233a2d98c642a00f0a884864"
+  }
+}

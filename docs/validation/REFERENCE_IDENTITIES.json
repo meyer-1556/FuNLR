@@ -1,0 +1,193 @@
+{
+  "recorded_at_utc": "2026-09-12T12:22:56.549188+00:00",
+  "recorded_input_identities": {
+    "ANNOTATIONS_FILE": {
+      "filename": "Psilocybe_cubensis_1.final.annotation.annotations.txt",
+      "sha256": "36e57378b0351c6562c43847c7bd5ebc5ec9bdaf1e6d8ab771e3b506e96ff1c6"
+    },
+    "EGGNOG_FILE": {
+      "filename": "Psilocybe_cubensis_1.eggnog.annotations.tsv",
+      "sha256": "ac2c0b4527aa6edc5b7b4e531b1f7015b7dbf0f54081c6073b433ddc248a0805"
+    },
+    "GENOME_FILE": {
+      "filename": "Psilocybe_cubensis_1.genome.masked.fa",
+      "sha256": "fdf20ca0153f9d423b8033a9334c4636d454be19576b5dd1245e391ebcfc0b0f"
+    },
+    "GFF_FILE": {
+      "filename": "Psilocybe_cubensis_1.final.annotation.gff3",
+      "sha256": "5a4ef6bc00dad323da66dc4c96eaa11190459f598ce7ebbf81951ab30651b5a6"
+    },
+    "PROTEINS_FILE": {
+      "filename": "Psilocybe_cubensis_1.final.annotation.proteins.fa",
+      "sha256": "886006feffc8fb11380f5ccc33a76906d7c31b64c97efd3ccd5c9fc5a143d0e6"
+    }
+  },
+  "recorded_model_identities": {
+    "ASM_HMMS": {
+      "filename": "NLR_ASM_combined.hmm",
+      "sha256": "bd23db2dbf9056e256d5aef92ea67e336dac2e2a16dbdf9c04069a737a875a7d"
+    },
+    "COMBINED_EFFECTOR_HMMS": {
+      "filename": "NLR_effectors_combined.hmm",
+      "sha256": "ae5f7df4744da5d28dd36688535c0b9147cb420caa8af3c04da85a3db3d61862"
+    },
+    "COMBINED_SENSOR_HMMS": {
+      "filename": "NLR_sensors_combined.hmm",
+      "sha256": "1829aae31fba0739fcb2c525cf2c9e5d133d8098d2593d1ba9e67f18ae6a748a"
+    },
+    "CUSTOM_HMMS": {
+      "filename": "NLR_custom_combined.hmm",
+      "sha256": "d0ebec72a6092276f4cc16229869d5f6787de5f3949c54661d125998d68954e7"
+    },
+    "NBD_HMMS": {
+      "filename": "NLR_NBD_combined.hmm",
+      "sha256": "230982ccb1e008aee682d9469eb525a407d007ec104ba5ebb287765b1f276433"
+    },
+    "PFAM_DB": {
+      "filename": "Pfam-A.hmm",
+      "sha256": "4b0da6399b97d2b23329de82190b2e5705bde1dea4cb2d028a52712d5966739e"
+    }
+  },
+  "recorded_run": {
+    "assembly_version": "post-orthofiller",
+    "funlr_version": "0.2.0a2",
+    "input_counts": {
+      "contigs": 1572,
+      "proteins": 12935,
+      "transcripts": 12935
+    },
+    "manifest_sha256": "f9922f3f04504c0c4b40d5ffac4f2eaf8e25e000584b667c83ca3371b59b1665",
+    "sample": "Psilocybe_cubensis_1",
+    "species_id": "psicub_aus"
+  },
+  "related_record": "replay_validation.json",
+  "replay_source_identities": {
+    "final_results/nlr_final_report.tsv": {
+      "sha256": "71e4f397b05f6554d5982dfe69d974c0309cc2e7c15758d6f33a411237ad4c65",
+      "size_bytes": 476401
+    },
+    "final_results/nlr_strict_candidates.tsv": {
+      "sha256": "920204bb5a06421ac01ec43bb6c80ba46f73f60627f77326847194b6e1bf6d51",
+      "size_bytes": 91060
+    },
+    "final_results/qc_summary.tsv": {
+      "sha256": "d19a7c28718c318661c44c9ebeb0f120688e3f27983e1b7afee549c06e42959c",
+      "size_bytes": 656
+    },
+    "results/stage0/proteins_clean.faa": {
+      "sha256": "0800fd2179ba5bf0e47a104eaa8c56b77f74e46b831a6e3a06f5b31e40ba8aa5",
+      "size_bytes": 6601446
+    },
+    "results/stage1/desc_priority_ids.structural_hint.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "results/stage1/desc_priority_ids.txt": {
+      "sha256": "8762f7ec83999662d107710946a16bd629310d56fc63582db2e8ff0dbe4498a4",
+      "size_bytes": 23041
+    },
+    "results/stage1/nbd_candidate_ids_relaxed.txt": {
+      "sha256": "042a2566d0adc84a4c96132d9063bde7f2a860096d919f90563c0700c68d1d01",
+      "size_bytes": 2575
+    },
+    "results/stage1/nbd_candidate_ids_strict.txt": {
+      "sha256": "8773142f85e68fbe29e314eea620d249533588889cca3ce9e19e12bd6b1cb1d1",
+      "size_bytes": 1450
+    },
+    "results/stage1/nbd_hits_detailed.tsv": {
+      "sha256": "2b7d14b55287a7c2e39ea1db5fac06eb92b769e5fc3c1c7e593d017fe5877155",
+      "size_bytes": 563357
+    },
+    "results/stage1/nbd_whole.domtblout": {
+      "sha256": "e88194d01a2d148e465510c80fdd610805b9870f4e4ee0483a1dd822d3c2bfb7",
+      "size_bytes": 1094788
+    },
+    "results/stage1/pfam_nbd.domtblout": {
+      "sha256": "cd808b2bc7e6aa0194ccc666b23771cf318e1ac3285b82303d099838e0b274f4",
+      "size_bytes": 70902
+    },
+    "results/stage1/pfam_nbd.hmm": {
+      "sha256": "a50f636627c541513b4678b295d975aa27a3a90cfe387f2872dabaaa033ca7ac",
+      "size_bytes": 161229
+    },
+    "results/stage1/pfam_nbd_candidate_ids.txt": {
+      "sha256": "b6d5b659b65c7caedf1710baa1e05e115d54bc655f2332ecbe56c7aa50ab1b4f",
+      "size_bytes": 1250
+    },
+    "results/stage1/pfam_nbd_hits.tsv": {
+      "sha256": "0740b8fe6f1581fa095a65929a6d4b60629a400e2394604280237d7ae947cd17",
+      "size_bytes": 2748
+    },
+    "results/stage1/pfam_priority_ids.txt": {
+      "sha256": "e2ca4b060a556a2b720489f74fa18d7e0d18d835ddbce9cbb1c8185e91ddf227",
+      "size_bytes": 5350
+    },
+    "results/stage1/run_info.txt": {
+      "sha256": "48690f3c819f148a5cbb2cc80adc9bea7b923aaadb2a1f043e160642c7734004",
+      "size_bytes": 2974
+    },
+    "results/stage1/union_candidate_ids.raw.txt": {
+      "sha256": "94d484278c201453d952d042d520cb80928506078b2c36c9f3e46637b7e69e87",
+      "size_bytes": 6425
+    },
+    "results/stage1/union_candidate_ids.txt": {
+      "sha256": "94d484278c201453d952d042d520cb80928506078b2c36c9f3e46637b7e69e87",
+      "size_bytes": 6425
+    },
+    "results/stage3/tables/tiered_candidates.tsv": {
+      "sha256": "886424cc39aea5368865eab4441bd61dc806d1f3ac5ad13015654f2ab5ec5c20",
+      "size_bytes": 703639
+    },
+    "results/stage5/comprehensive/queries/exonerate_refine_ids.txt": {
+      "sha256": "7f583298f2fb35ee188a8ed82d544ae307a36426fffd52d78746823727b7775b",
+      "size_bytes": 200
+    },
+    "results/stage5/comprehensive/queries/miniprot_comprehensive_ids.txt": {
+      "sha256": "eb132a70037712d377b15f90b2c6e543d390a2546bb0df0f7165013a87c784b9",
+      "size_bytes": 1400
+    },
+    "results/stage5/comprehensive/tables/miniprot_features.tsv": {
+      "sha256": "36f36100eca65e65fd5287e60c833e5e50d6f99c592471a713ec404135e85f03",
+      "size_bytes": 75004
+    },
+    "results/stage5/queries/exonerate_refine_ids.txt": {
+      "sha256": "0408567b394c9750a76e614015b104038e2e318482ee8e0ad879d374fccf5e5b",
+      "size_bytes": 75
+    },
+    "results/stage5/queries/miniprot_priority_ids.txt": {
+      "sha256": "99496b1b06203d68bcffdd3c8097e548c779de2390c5fc170be702006abf262a",
+      "size_bytes": 775
+    },
+    "results/stage5/tables/miniprot_features.tsv": {
+      "sha256": "8017786fd5da9fb2436e95d3ccda82164f59a02fc311041af6631dd02f99afce",
+      "size_bytes": 37445
+    },
+    "results/stage6/comprehensive/queries/exonerate_queries.ids": {
+      "sha256": "7f583298f2fb35ee188a8ed82d544ae307a36426fffd52d78746823727b7775b",
+      "size_bytes": 200
+    },
+    "results/stage6/comprehensive/queries/exonerate_run.ids": {
+      "sha256": "a98bc78f0f0405514e078a8eaeccbff42d479b19e6dc29a83bc3ac649bc900df",
+      "size_bytes": 287
+    },
+    "results/stage6/comprehensive/tables/exonerate_summary.tsv": {
+      "sha256": "fb237c14f82534f6a94f1f0ab593caa64c117bdf83be1c346af1fe5ea38b05e5",
+      "size_bytes": 603
+    },
+    "results/stage6/queries/exonerate_queries.ids": {
+      "sha256": "0408567b394c9750a76e614015b104038e2e318482ee8e0ad879d374fccf5e5b",
+      "size_bytes": 75
+    },
+    "results/stage6/queries/exonerate_run.ids": {
+      "sha256": "f979fe4416f88f4cbf418f1436c9f87535792917e2bff978b39fb17d5d0856b4",
+      "size_bytes": 147
+    },
+    "results/stage6/tables/exonerate_summary.tsv": {
+      "sha256": "91b60731aa242141f865c5adaf709fc82776b5a285414a8c12391bd76645d48d",
+      "size_bytes": 317
+    }
+  },
+  "replay_source_identity_scope": "These relative-path source files were hashed by the completed evidence replay; all exported sequence spans were checked against the saved cleaned protein FASTA.",
+  "schema_version": 1,
+  "scope": "Dataset and model identities recorded for the existing completed analysis used for the additive evidence replay. Original inputs and model files were not rehashed in this supplementary step; no external tools were rerun."
+}

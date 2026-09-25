@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+import os
+import sys
+from pathlib import Path
+if os.environ.get("FUNLR_TEST_DOUBLES") != "1":
+    raise SystemExit("Refusing to run a synthetic test double outside the test suite")
+if any(a in ("--version", "-h", "--help", "version") for a in sys.argv[1:]):
+    print("SYNTHETIC TEST DOUBLE shim-2.0")
+    raise SystemExit(0)
+args = sys.argv[1:]
+fixture = Path(os.environ["FUNLR_FIXTURE_DIR"])
+
+# Pressed work files use content hashes, so identify model content, not paths.
+database = Path(args[-2]).read_text()
+queries = {line[1:].split()[0] for line in Path(args[-1]).read_text().splitlines() if line.startswith(">")}
+models = {line.split()[1] for line in database.splitlines() if line.startswith("NAME")}
+if "nbd_dummy" in models:
+    source, allowed = "nbd", None
+elif "pfam_dummy" in models:
+    source, allowed = "pfam", None
+elif "custom_dummy" in models:
+    source, allowed = "custom", None
+elif models <= {"NACHT", "NB-ARC"} and models:
+    source, allowed = "pfam", models
+else:
+    raise SystemExit("Unknown synthetic HMM contents: " + repr(models))
+rows = []
+for line in (fixture/"canned"/(source+".domtblout")).read_text().splitlines():
+    if line.startswith("#") or not line.strip():
+        continue
+    parts = line.split()
+    if parts[3] in queries and (allowed is None or parts[0] in allowed):
+        rows.append(line)
+Path(args[args.index("--domtblout")+1]).write_text("# synthetic hmmscan\n"+"".join(line+"\n" for line in rows))
+print("SYNTHETIC TEST DOUBLE hmmscan; query-filtered canned domain evidence")

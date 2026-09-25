@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+import sys
+import os
+if os.environ.get("FUNLR_TEST_DOUBLES") != "1":
+    raise SystemExit("Refusing to run a synthetic test double outside the test suite")
+if any(a in ("--version", "-h", "--help", "version") for a in sys.argv[1:]):
+    print("SYNTHETIC TEST DOUBLE shim-1.0")
+    raise SystemExit(0)
+import os, sys, re
+FIX = os.environ["FUNLR_FIXTURE_DIR"]
+
+# emulate: samtools faidx <fasta>
+cmd = sys.argv[1]
+assert cmd == "faidx", sys.argv
+fasta = sys.argv[2]
+records = []
+name, seq_len, offset, line_bases, line_bytes = None, 0, 0, 0, 0
+pos = 0
+with open(fasta) as fh:
+    for line in fh:
+        if line.startswith(">"):
+            if name is not None:
+                records.append((name, seq_len, offset, line_bases, line_bytes))
+            name = line[1:].split()[0]
+            seq_len = 0
+            offset = pos + len(line)
+            line_bases = line_bytes = 0
+        else:
+            stripped = line.rstrip("\n")
+            seq_len += len(stripped)
+            if not line_bases:
+                line_bases = len(stripped)
+                line_bytes = len(line)
+        pos += len(line)
+if name is not None:
+    records.append((name, seq_len, offset, line_bases, line_bytes))
+with open(fasta + ".fai", "w") as out:
+    for r in records:
+        out.write("\t".join(map(str, r)) + "\n")

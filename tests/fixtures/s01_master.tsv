@@ -1,0 +1,6 @@
+protein_id	transcript_id	gene_id	scaffold	start	end	strand	protein_length	COG_category	Description	Preferred_name	GOs	KEGG_ko
+prot1	prot1	gene1	scf1	100	2000	+	350	S	NACHT domain protein	nacht1	GO:0006952	K00001
+prot2	prot2	gene2	scf1	3000	4500	-	400	A	ABC transporter	abcA	GO:0005215	K00002
+prot3	prot3	gene3	scf2	100	900	+	500	R	Repeat protein	WD40	GO:0005515	K00003
+prot4	prot4	gene4	scf2	1000	2000	-	600	L	gasdermin-like protein	gsdmA		K00004
+prot5	prot5	gene5	scf2	3000	4000	+	700

@@ -1,0 +1,41 @@
+# Linux amd64 recipe; run the build from the FuNLR repository root.
+Bootstrap: docker
+From: mambaorg/micromamba:2.9.0@sha256:5681ae3caa12844c41d31e1d70f636fbaba31b01bdfd1b5b521742d7e490614d
+
+%labels
+    org.opencontainers.image.source https://github.com/meyer-1556/FuNLR
+    org.opencontainers.image.title FuNLR
+    org.opencontainers.image.version 0.5.0a1
+    org.opencontainers.image.licenses MIT AND BSD-3-Clause AND CC-BY-4.0 AND CC0-1.0
+
+%files
+    environments/conda-linux-64.lock /tmp/funlr.lock
+    pyproject.toml /opt/funlr/pyproject.toml
+    README.md /opt/funlr/README.md
+    LICENSE /opt/funlr/LICENSE
+    NOTICE /opt/funlr/NOTICE
+    src /opt/funlr/src
+
+%post
+    set -eu
+    /bin/micromamba install --yes --name base --file /tmp/funlr.lock
+    /bin/micromamba run --name base python -m pip install --no-deps --no-build-isolation /opt/funlr
+    /bin/micromamba clean --all --yes
+    chmod -R a+rX /opt/conda /opt/funlr
+
+%environment
+    export PATH=/opt/conda/bin:$PATH
+
+%runscript
+    exec /opt/conda/bin/funlr "$@"
+
+%test
+    export PATH=/opt/conda/bin:$PATH
+    /opt/conda/bin/funlr doctor --demo
+
+%help
+    FuNLR 0.5.0a1. Run `apptainer run funlr.sif --help`.
+    Bind input/HMM directories read-only and a writable output directory.
+    Production databases are supplied by the user; bundled profiles are demo-only.
+    Test installation with `apptainer run funlr.sif demo --outdir /output/demo`.
+    Run the public example with `apptainer run funlr.sif demo --dataset public-sequences --outdir /output/public-demo`.

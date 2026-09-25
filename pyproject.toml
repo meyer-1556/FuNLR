@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "funlr"
+version = "0.5.0a2"
+description = "Portable fungal NLR discovery, architecture and genome rescue"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT AND BSD-3-Clause AND CC-BY-4.0 AND CC0-1.0"
+license-files = ["LICENSE", "NOTICE", "src/funlr/THIRD_PARTY_LICENSE.txt", "src/funlr/data/public_sequences/DATA_LICENSES.md"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+authors = [{name = "Matthew G.E. Meyer"}, {name = "Jason C. Slot"}]
+dependencies = ["pandas==2.2.3", "numpy==1.26.4", "PyYAML==6.0.3", "matplotlib==3.10.8"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[project.scripts]
+funlr = "funlr.cli:main"
+
+[project.urls]
+Repository = "https://github.com/meyer-1556/FuNLR"
+Issues = "https://github.com/meyer-1556/FuNLR/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+funlr = ["py.typed", "THIRD_PARTY_LICENSE.txt", "data/*.json", "data/public_sequences/*", "data/public_sequences/db/*", "stages/*.R"]

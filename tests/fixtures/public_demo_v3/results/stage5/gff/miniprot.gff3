@@ -1,0 +1,11 @@
+##gff-version 3
+##PAF	HETE_Q8X1P4	1356	0	1356	+	het_e_locus	29413	12810	16927	4068	4068	0	AS:i:7162	ms:i:7191	np:i:1356	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:761M49N595M	cs:Z::761~gt49ag:595
+het_e_locus	miniprot	mRNA	12811	16930	7191	+	.	ID=MP000001;Rank=1;Identity=1.0000;Positive=1.0000;Target=HETE_Q8X1P4 1 1356
+het_e_locus	miniprot	CDS	12811	15093	4016	+	0	Parent=MP000001;Rank=1;Identity=1.0000;Target=HETE_Q8X1P4 1 761
+het_e_locus	miniprot	CDS	15143	16930	3175	+	0	Parent=MP000001;Rank=1;Identity=1.0000;Target=HETE_Q8X1P4 762 1356
+het_e_locus	miniprot	stop_codon	16928	16930	0	+	0	Parent=MP000001;Rank=1
+##PAF	HETE_Q8X1P4	1356	0	1356	+	het_e_edge	20413	12810	16927	4068	4068	0	AS:i:7162	ms:i:7191	np:i:1356	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:761M49N595M	cs:Z::761~gt49ag:595
+het_e_edge	miniprot	mRNA	12811	16930	7191	+	.	ID=MP000002;Rank=2;Identity=1.0000;Positive=1.0000;Target=HETE_Q8X1P4 1 1356
+het_e_edge	miniprot	CDS	12811	15093	4016	+	0	Parent=MP000002;Rank=2;Identity=1.0000;Target=HETE_Q8X1P4 1 761
+het_e_edge	miniprot	CDS	15143	16930	3175	+	0	Parent=MP000002;Rank=2;Identity=1.0000;Target=HETE_Q8X1P4 762 1356
+het_e_edge	miniprot	stop_codon	16928	16930	0	+	0	Parent=MP000002;Rank=2

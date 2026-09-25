@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "TEMPLATE: replace null fields using the actual scientific resources",
+  "databases": {
+    "nbd_hmms": {
+      "path": null,
+      "sha256": null,
+      "source": null,
+      "release": null,
+      "retrieved_at": null,
+      "citation": null,
+      "license": null,
+      "redistribution": null,
+      "construction": null
+    },
+    "pfam": {
+      "path": null,
+      "sha256": null,
+      "source": null,
+      "release": null,
+      "retrieved_at": null,
+      "citation": null,
+      "license": null,
+      "redistribution": null,
+      "construction": null
+    },
+    "custom_hmms": null
+  }
+}

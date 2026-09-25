@@ -1,0 +1,6 @@
+##gff-version 3
+ctg2	exonerate	gene	40	410	300	+	.	Target=p3;note=z
+ctg2	exonerate	exon	40	200	.	+	.	Target=p3
+ctg5	exonerate	gene	10	90	100	-	.	Parent=p7
+ctg5	exonerate	exon	10	50	.	-	.	Parent=p7
+ctg9	exonerate	gene	5	9	10	+	.	no_id_here

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "sha256": {
+    "DATA_LICENSES.md": "7c2b12578688b743ad9a0cafc850961c5626256c84846ca447a5bae1c1c8c72b",
+    "PROVENANCE.json": "3465051e18f3687618b08e8090a758de98fa34bb21116d757fc189d59eb5815c",
+    "README.md": "5820e44ad9981cd394b1e93fab0d2f5b1af77d47fd2b4cbd0ed029be0beeaad8",
+    "annotation.gff3": "2248a99ab61f974cec9057d538397fae34abf210d96bfa536e0ba3d59a3efe7c",
+    "config.yaml": "5d2629136df723c3e3a3eaee933f4ca967afdf63507fe50c2e9f481fae55af8f",
+    "db/nbd.hmm": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+    "db/pfam_mini.hmm": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+    "emapper.annotations": "c6ddb03610c12f6228d92b2acba8e6f5fa2c92b2e4480afcfde677181409b751",
+    "genome.fa": "957af612ef0d37423b91011a6cb8124384b79dc828607089d972d1b7ff6adbda",
+    "proteins.faa": "8805d7a23ece92ef581aa86388980d93de2c55cf4a52e4b1625888e33adee917"
+  },
+  "source": "examples/demo"
+}

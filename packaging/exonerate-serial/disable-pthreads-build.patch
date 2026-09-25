@@ -1,0 +1,25 @@
+--- a/src/general/jobqueue.c
++++ b/src/general/jobqueue.c
+@@ -78,11 +78,13 @@
+     return jq;
+     }
+ 
++#ifdef USE_PTHREADS
+ static void JobQueue_Task_free_func(gpointer data, gpointer user_data){
+     register JobQueue_Task *task = data;
+     JobQueue_Task_destroy(task);
+     return;
+     }
++#endif /* USE_PTHREADS */
+ 
+ void JobQueue_destroy(JobQueue *jq){
+ #ifdef USE_PTHREADS
+@@ -106,7 +108,7 @@
+     PQueue_push(jq->pq, task);
+     pthread_mutex_unlock(&jq->queue_lock);
+ #else /* USE_PTHREADS */
+-    jq->job_func(job_data); /* when no threads available, just run the job */
++    job_func(job_data); /* when no threads available, just run the job */
+ #endif /* USE_PTHREADS */
+     return;
+     }

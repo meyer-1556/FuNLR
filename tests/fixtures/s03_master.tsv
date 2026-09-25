@@ -1,0 +1,15 @@
+protein_id	transcript_id	gene_id	scaffold	start	end	strand	protein_length	COG_category	Description	Preferred_name	GOs	KEGG_ko
+t1a	t1a_t	t1a_g	scfA	40000	45000	+	900	S	hypothetical protein	t1a	GO:0000001	K00001
+t1b_end	t1b_end_t	t1b_end_g	scfB	5000	8000	+	800	S	hypothetical protein	t1b_end	GO:0000001	K00001
+t1b_short	t1b_short_t	t1b_short_g	scfA	60000	61000	+	300	S	hypothetical protein	t1b_short	GO:0000001	K00001
+t2a	t2a_t	t2a_g	scfC	2000	4000	+	900	S	hypothetical protein	t2a	GO:0000001	K00001
+t2b_noflank	t2b_noflank_t	t2b_noflank_g	scfD	1000	5500	+	900	S	hypothetical protein	t2b_noflank	GO:0000001	K00001
+t2b_nbdonly	t2b_nbdonly_t	t2b_nbdonly_g	scfE	40000	46000	+	900	S	hypothetical protein	t2b_nbdonly	GO:0000001	K00001
+t2b_repeatnear	t2b_repeatnear_t	t2b_repeatnear_g	scfF	20000	21000	+	900	S	hypothetical protein	t2b_repeatnear	GO:0000001	K00001
+rep1	rep1_t	rep1_g	scfF	26000	27000	+	900	S	hypothetical protein	rep1	GO:0000001	K00001
+t3	t3_t	t3_g	scfG	40000	46000	+	900	S	hypothetical protein	t3	GO:0000001	K00001
+t3_fp	t3_fp_t	t3_fp_g	scfH	40000	46000	+	900	S	hypothetical protein	t3_fp	GO:0000001	K00001
+t3_nan	t3_nan_t	t3_nan_g	scfL	40000	46000	+	900	S	hypothetical protein	t3_nan	GO:0000001	K00001
+t4a	t4a_t	t4a_g	scfI	40000	46000	+	900	S	hypothetical protein	t4a	GO:0000001	K00001
+t4b	t4b_t	t4b_g	scfJ	40000	46000	+	900	S	DNA replication licensing factor	t4b	GO:0000001	K00001
+t4c	t4c_t	t4c_g	scfK	40000	46000	+	900	S	hypothetical protein	t4c	GO:0000001	K00001

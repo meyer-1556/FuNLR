@@ -1,0 +1,62 @@
+{% set name = "funlr" %}
+{% set version = "0.5.0a1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+# A usable local-source recipe. Replace with a public, checksum-pinned source
+# URL only after that source release actually exists.
+source:
+  path: ../..
+
+build:
+  number: 0
+  noarch: python
+  script: bash "${RECIPE_DIR}/build.sh"
+  entry_points:
+    - funlr = funlr.cli:main
+
+requirements:
+  host:
+    - python >=3.11,<3.13
+    - pip
+    - setuptools ==80.9.0
+    - wheel ==0.45.1
+  run:
+    - python >=3.11,<3.13
+    - matplotlib-base ==3.10.8
+    - pandas ==2.2.3
+    - numpy ==1.26.4
+    - pyyaml ==6.0.3
+    - hmmer ==3.4
+    - samtools ==1.21
+    - seqkit ==2.12.0
+    - miniprot ==0.18
+    - exonerate ==2.4.0
+    - gffread ==0.12.7
+
+test:
+  imports:
+    - funlr
+    - funlr.cli
+  commands:
+    - funlr version
+    - funlr doctor --demo
+    - funlr demo --outdir conda-test-demo
+    - funlr demo --dataset public-sequences --outdir conda-test-public-demo
+
+about:
+  home: https://github.com/meyer-1556/FuNLR
+  license: MIT AND BSD-3-Clause AND CC-BY-4.0 AND CC0-1.0
+  license_file:
+    - LICENSE
+    - NOTICE
+    - src/funlr/THIRD_PARTY_LICENSE.txt
+    - src/funlr/data/public_sequences/DATA_LICENSES.md
+  summary: Portable fungal NLR discovery with the original eight-stage workflow
+  description: |
+    Python orchestration of fungal NLR discovery, domain annotation, tiering,
+    alignment-based rescue evidence, and reporting. Scientific profile HMM
+    databases are user-supplied inputs. Linux x86_64 and macOS arm64 are the
+    initial runtime targets; Windows bioinformatics dependencies are not supplied.

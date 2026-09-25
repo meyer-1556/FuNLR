@@ -1,0 +1,478 @@
+{
+  "audit": "scientific-decision-preservation",
+  "baseline_version": "0.4.0a1",
+  "current_version": "0.5.0a1",
+  "defaults": {
+    "all_equal": true,
+    "baseline_canonical_json_sha256": "7374d78daa84d9a9e3ca5b489bc9ed4386b0cadad64f7dedf7e6840584342b28",
+    "current_canonical_json_sha256": "7374d78daa84d9a9e3ca5b489bc9ed4386b0cadad64f7dedf7e6840584342b28",
+    "effective_cases": [
+      "HIFI/BALANCED",
+      "HIFI/BALANCED/explicit",
+      "HIFI/BROAD",
+      "HIFI/BROAD/explicit",
+      "HIFI/STRICT",
+      "HIFI/STRICT/explicit",
+      "ILLUMINA/BALANCED",
+      "ILLUMINA/BALANCED/explicit",
+      "ILLUMINA/BROAD",
+      "ILLUMINA/BROAD/explicit",
+      "ILLUMINA/STRICT",
+      "ILLUMINA/STRICT/explicit"
+    ],
+    "scientific_setting_count": 81
+  },
+  "diagnostic_block_exclusions": [
+    {
+      "baseline_statement_ast_sha256": "52618f7483fe97df81bf154148224825c35a2e1bfe71bbef30c79026123f8e3e",
+      "current_block_ast_sha256": "00b68d416c9e8f57386a409bdaa246ae8d3b71141339c4001f56152ffdd32154",
+      "function": "validate_inputs",
+      "matched": true,
+      "module": "validation.py",
+      "scope": "Only the exact reviewed six-entry local notes dictionary and its warnings.append replace the original generic omission warning. The optional-input branch predicate, continue, required-input checks, scientific values, and returned input/count data remain significant in AST comparison."
+    }
+  ],
+  "diagnostic_exclusions": [
+    {
+      "after_sha256": "d468c750a60566da2ae6fb94d8c0935bdc8567c0870ef62fc1ef7f42af3fd86d",
+      "before_sha256": "206f8087052b8ca54f31d447871f3bca7b09aad8765c7715fbbbbc0ba5dd7dcc",
+      "current_message": "Could not extract both NACHT and NB-ARC from Pfam; retaining reference fallback to empty Pfam-NBD evidence"
+    },
+    {
+      "after_sha256": "2e2993c2b5527dcda8b8572129295f17495a5608c664172554a3df603c9a735c",
+      "before_sha256": "91e6717bf4c1c09e4078acc7fefc0492235d3e66e3e633475937cc3cdab9e935",
+      "current_message": "Background Pfam scan failed; retaining reference candidates-background fallback"
+    },
+    {
+      "after_sha256": "ac03faffc8c888e83821b290edf6eef929758f0ae91820bcd5d2368136a2951b",
+      "before_sha256": "3ccccfaca4f7cb0503daf2e7552e4cbb01e27aa221c7501f4408d314571a0294",
+      "current_message": " was not implemented by the analysis workflow; only its recorded default "
+    },
+    {
+      "after_sha256": "57fea9529c85e62a98d2181921d1bc418cdd2c943f47e402f733c6e18b27188b",
+      "before_sha256": "7878fa80215f8aa235fceadbfec63db92dfee6795ce9f4f36b6d6243d843770b",
+      "current_message": "EXON_MAX_INTRON_RETRY was not implemented by the analysis workflow; retain the profile default"
+    }
+  ],
+  "discrepancies": [],
+  "limitations": [
+    "Static equivalence and configuration equality are not an independent biological benchmark or a new real-tool full-reference replay.",
+    "Docstrings/comments, the enumerated diagnostic messages and the exact optional-warning construction block are excluded; arbitrary scientific string constants are not ignored.",
+    "Stage 0 and Stage 7 wrappers contain explicitly reviewed additive code. New QC/evidence export failures or unmet completeness checks can now fail a stage.",
+    "New evidence/QC algorithms have no earlier counterpart; their descriptive interpretation is covered by separate focused tests and review, not this equivalence claim.",
+    "No full equivalence claim is made for new CLI commands, installer behavior, HTML layout, metadata provenance or required artifact lists."
+  ],
+  "method": "Compare Python ASTs without source positions or comments; remove only leading module/class/function docstrings; normalize six exact private module import renames and four individually reviewed diagnostic text replacements. Normalize only the separately enumerated exact optional-input warning construction block. Other string constants, regular expressions, command arguments, numeric constants, data tables and control flow remain significant.",
+  "models": {
+    "bundled_hmm_records": [
+      {
+        "baseline_sha256": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+        "byte_identical": true,
+        "current_sha256": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f",
+        "path": "data/public_sequences/db/nbd.hmm"
+      },
+      {
+        "baseline_sha256": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+        "byte_identical": true,
+        "current_sha256": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e",
+        "path": "data/public_sequences/db/pfam_mini.hmm"
+      }
+    ],
+    "fixed_snapshot_library_records_identical": true
+  },
+  "optional_input_validation": {
+    "case_count": 9,
+    "cases": [
+      "all_optional_omitted",
+      "enabled_asm_missing",
+      "provided_annotations",
+      "provided_asm_hmms",
+      "provided_custom_hmms",
+      "provided_effector_hmms",
+      "provided_eggnog",
+      "provided_sensor_hmms",
+      "required_genome_missing"
+    ],
+    "same_inputs_counts_required_failures_and_warning_input_order": true,
+    "scope": "Nine isolated file-presence and identifier-validation cases compare returned input mappings/counts, optional-warning input identities/order, and required-input rejection messages. New warning wording is separately constrained by the exact AST block exclusion; no external tool runs."
+  },
+  "other_reviewed_behavior": [
+    "Runner now requires valid Stage 0 input-QC JSON and both copies of the five Stage 7 evidence products; this changes artifact-completeness requirements, not candidate selection.",
+    "Run provenance replaces a historical source label with the versioned analysis_policy label.",
+    "Optional-input warnings now distinguish evidence affecting discovery/classification from annotation-table exports and separate component-library provenance; absence checks and biological inputs are unchanged.",
+    "HTML/status reporting adds recorded elapsed time, file sizes, descriptive input measurements and evidence summaries; original scientific count and table-summary functions are unchanged.",
+    "New inventory and benchmark commands do not participate in the scientific pipeline."
+  ],
+  "r_plot_program_byte_identical": true,
+  "report_functions": [
+    {
+      "function": "_empty_counts",
+      "normalized_ast_sha256": "09fa579fbea1cbc1cac75efc76c33e2ee493c8c34f4f2be29e0559ae22f2c160",
+      "same_ast": true
+    },
+    {
+      "function": "_read_table",
+      "normalized_ast_sha256": "23b787d64a69cb60f7da34a19d8f5def960af7f318ff02365e4218c9be97b5be",
+      "same_ast": true
+    },
+    {
+      "function": "_table_summary",
+      "normalized_ast_sha256": "b6406352ec9a9391b87ec6196058a05fc525b8c9da5e35a37a32397adbf96dcd",
+      "same_ast": true
+    },
+    {
+      "function": "_records",
+      "normalized_ast_sha256": "5061506a33b54af20fd9ebd1b0fdde7d0242373f2c7c7c3eccc7f28d08f4eb88",
+      "same_ast": true
+    },
+    {
+      "function": "_verify",
+      "normalized_ast_sha256": "1d74b12fb1cecacaa3268167874afc68d1c6d4d445c12d23d33b801ed4284ee0",
+      "same_ast": true
+    },
+    {
+      "function": "_check_snapshot",
+      "normalized_ast_sha256": "39bc4538639cf1435dcc8b1a1614f3e01f1165f9f5e4b03bd268dfcd336f4234",
+      "same_ast": true
+    }
+  ],
+  "reviewed_additive_wrappers": [
+    {
+      "check": "All original statements retained in order; only the five exact reviewed descriptive-QC statements are added",
+      "function": "run",
+      "matched": true,
+      "module": "stages/stage0_validate.py"
+    },
+    {
+      "check": "Exact reviewed wrapper calls unchanged run_final first, then exports separate evidence directories and refreshes the stage artifact manifest",
+      "function": "run",
+      "matched": true,
+      "module": "stages/stage7_finalize.py"
+    }
+  ],
+  "schema_version": 1,
+  "scientific_modules": [
+    {
+      "baseline_sha256": "321e9a900ab5446920de7420e1a5f998a9450cddeb24a83ba74c98ff54192d7d",
+      "current_sha256": "42176fc9dc5beb12996848c2cbcaac3f4d31b56c6696afc26678befc46f30793",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "config.py",
+      "normalized_baseline_ast_sha256": "a3624d0b00072886003d63978d9429cc6650e019aef9a6bbca1c38067be6a924",
+      "normalized_current_ast_sha256": "a3624d0b00072886003d63978d9429cc6650e019aef9a6bbca1c38067be6a924",
+      "top_level_functions": 3
+    },
+    {
+      "baseline_sha256": "307d6dd86ddb1978454835d0e4ec2922691aa8ee348822a84955580dd0f73406",
+      "current_sha256": "26b411ef464d47fb400ba324b11f04be4f7c9b77c60b0f2eddfe25119fb99ccd",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "updated_defaults.py",
+      "normalized_baseline_ast_sha256": "5f4ebc2eb729f351d4be13dd2d9c08e8fc1036995d9d8ace1bb6d1705517c1ab",
+      "normalized_current_ast_sha256": "5f4ebc2eb729f351d4be13dd2d9c08e8fc1036995d9d8ace1bb6d1705517c1ab",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "824f94070429dbc4af5afad43bc657d83d413265f98993436e81248d053e3527",
+      "current_sha256": "ba30e8232fe75b4a9ebffb5bf421014ab90a9c4c81533af7a2057df9a27712be",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "validation.py",
+      "normalized_baseline_ast_sha256": "28c56f3838ec939f602f44c0e5e746087682bddc4affa139a3b8da7fbc321095",
+      "normalized_current_ast_sha256": "28c56f3838ec939f602f44c0e5e746087682bddc4affa139a3b8da7fbc321095",
+      "top_level_functions": 2
+    },
+    {
+      "baseline_sha256": "420ab45cb07327f15bf6a0652c6c9d6b4ce4ee1777385e5c348863ecfee51d15",
+      "current_sha256": "2d1926049bde4566e2b84f18bcb7f71cbd70ccefd6389f8c759d279f6d59198e",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "plots.py",
+      "normalized_baseline_ast_sha256": "028248dbe723132539390c4a4bf22d54f4411e569b13a7bbef8fb0e06c1a23e4",
+      "normalized_current_ast_sha256": "028248dbe723132539390c4a4bf22d54f4411e569b13a7bbef8fb0e06c1a23e4",
+      "top_level_functions": 22
+    },
+    {
+      "baseline_sha256": "04d655d3c33f62f2c65a177a812c5c6074d3b314e891c47c598ebd69acca02be",
+      "current_sha256": "04d655d3c33f62f2c65a177a812c5c6074d3b314e891c47c598ebd69acca02be",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "batch.py",
+      "normalized_baseline_ast_sha256": "0e2fab3d8b0bc0e336afe3eb1b81b9572f81cf204d1c2cc3246b24defc901d57",
+      "normalized_current_ast_sha256": "0e2fab3d8b0bc0e336afe3eb1b81b9572f81cf204d1c2cc3246b24defc901d57",
+      "top_level_functions": 14
+    },
+    {
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "core/__init__.py",
+      "normalized_baseline_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "normalized_current_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "e6c03d60461228303d2a9959a59483535611c4b36de2a26d28d186a7bd2c9474",
+      "current_sha256": "e6c03d60461228303d2a9959a59483535611c4b36de2a26d28d186a7bd2c9474",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "core/context.py",
+      "normalized_baseline_ast_sha256": "474dc845bca374a1c8578763e5e74488d0f3a019367becbd664aa020f36e56ff",
+      "normalized_current_ast_sha256": "474dc845bca374a1c8578763e5e74488d0f3a019367becbd664aa020f36e56ff",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "cc9a1e4d4819488356c9f5e4022972bb71b21150ac32b7c28c798a908ac59065",
+      "current_sha256": "cc9a1e4d4819488356c9f5e4022972bb71b21150ac32b7c28c798a908ac59065",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "core/errors.py",
+      "normalized_baseline_ast_sha256": "1dd798d8c6e69eb67a45aca07e7280d99bfb7281c9b80d85be97e1b902714e2f",
+      "normalized_current_ast_sha256": "1dd798d8c6e69eb67a45aca07e7280d99bfb7281c9b80d85be97e1b902714e2f",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "3a656b49dc55bba93b340d435dfe5beeec32abcd5e2fb883033da538f296c35c",
+      "current_sha256": "365afe69bc7e09785ae0f5809e671295d11d94a5234a2fc01f5e8bd4bc80a315",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "core/runner.py",
+      "normalized_baseline_ast_sha256": "0d1c7a90fe805421048da67f3be1040a9d00ee8caab00a3a07eb9b8a977e4082",
+      "normalized_current_ast_sha256": "0d1c7a90fe805421048da67f3be1040a9d00ee8caab00a3a07eb9b8a977e4082",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "43323d3f046b93357db0f3ade3c2277daacc54b1a4a4589a2285198b448fe6ab",
+      "current_sha256": "43323d3f046b93357db0f3ade3c2277daacc54b1a4a4589a2285198b448fe6ab",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "core/tools.py",
+      "normalized_baseline_ast_sha256": "9a45def6c233a75b30c9063b685723467cda6b96f724d8371f7e4a169c8da05b",
+      "normalized_current_ast_sha256": "9a45def6c233a75b30c9063b685723467cda6b96f724d8371f7e4a169c8da05b",
+      "top_level_functions": 3
+    },
+    {
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "parsers/__init__.py",
+      "normalized_baseline_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "normalized_current_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "0606993f4a8fd919864d5b9b42d2417a27b7085f5948aee29df4711bae57ac46",
+      "current_sha256": "0606993f4a8fd919864d5b9b42d2417a27b7085f5948aee29df4711bae57ac46",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "parsers/eggnog.py",
+      "normalized_baseline_ast_sha256": "ba728de61ea7190da18465307b42278b6294a377d06ab28243e804db3e39f33b",
+      "normalized_current_ast_sha256": "ba728de61ea7190da18465307b42278b6294a377d06ab28243e804db3e39f33b",
+      "top_level_functions": 1
+    },
+    {
+      "baseline_sha256": "29d5bb2a0159b7591f77688e5b11571c83fbc8e49a9d08f86120f9939ee91049",
+      "current_sha256": "29d5bb2a0159b7591f77688e5b11571c83fbc8e49a9d08f86120f9939ee91049",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "parsers/fasta.py",
+      "normalized_baseline_ast_sha256": "539e5b6d97b4213d41687c910f7700d6592495c437709f2171f0baa639b24cd6",
+      "normalized_current_ast_sha256": "539e5b6d97b4213d41687c910f7700d6592495c437709f2171f0baa639b24cd6",
+      "top_level_functions": 4
+    },
+    {
+      "baseline_sha256": "75b5b9707499b083cfc81f3b2745199b7fc1d3f0b0844631f00a36605eaa07a9",
+      "current_sha256": "75b5b9707499b083cfc81f3b2745199b7fc1d3f0b0844631f00a36605eaa07a9",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "parsers/gff.py",
+      "normalized_baseline_ast_sha256": "93b9fea9ddcd0cfac57c8a4b5179faf31e0e0179b36b9d815bfa79147fe18312",
+      "normalized_current_ast_sha256": "93b9fea9ddcd0cfac57c8a4b5179faf31e0e0179b36b9d815bfa79147fe18312",
+      "top_level_functions": 7
+    },
+    {
+      "baseline_sha256": "9540057c06352e0b250877436d2b6170d6ef79b4fcf514952478fe32f000285a",
+      "current_sha256": "9540057c06352e0b250877436d2b6170d6ef79b4fcf514952478fe32f000285a",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "parsers/hmmer.py",
+      "normalized_baseline_ast_sha256": "ae13112c5739a0f6fe915f35250188026d1d51c840f16f46188aecd2a90be130",
+      "normalized_current_ast_sha256": "ae13112c5739a0f6fe915f35250188026d1d51c840f16f46188aecd2a90be130",
+      "top_level_functions": 1
+    },
+    {
+      "baseline_sha256": "4be5493109caa93581fae9e57450749ef855bab02a64060d82a820181a8d7030",
+      "current_sha256": "c2126f48bacb2ffe5cecc8e2990f41c9e673269a7185cae893a59f9ce66ed9e4",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/__init__.py",
+      "normalized_baseline_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "normalized_current_ast_sha256": "3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6",
+      "top_level_functions": 0
+    },
+    {
+      "baseline_sha256": "5d707e08c0e54fe4817df81646e9b220cf23203360692e205be609b50683569e",
+      "current_sha256": "5d66d818c295a08905909fe172a1a30cdc43d6819d2f7b414596a89c6ec07e57",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_architecture.py",
+      "normalized_baseline_ast_sha256": "f16509dbe813bc4d45e876bff2ee3e49efd5489d456824ff530eea70dd8c13c3",
+      "normalized_current_ast_sha256": "f16509dbe813bc4d45e876bff2ee3e49efd5489d456824ff530eea70dd8c13c3",
+      "top_level_functions": 1
+    },
+    {
+      "baseline_sha256": "9da1d4caff25a40445c8e20ef5ba326c869b550dabe9afac20b91cd69e14f021",
+      "current_sha256": "c27f904349a14c7cf742f4021f8cc66ba1435c68313374a6ac461edcda72d420",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_discovery.py",
+      "normalized_baseline_ast_sha256": "bf8054ca58d2b829efb3e155dcc820ceb83f472f4a8c6d494d42cd78ba7f583e",
+      "normalized_current_ast_sha256": "bf8054ca58d2b829efb3e155dcc820ceb83f472f4a8c6d494d42cd78ba7f583e",
+      "top_level_functions": 4
+    },
+    {
+      "baseline_sha256": "a137239d870bbe63090a3e5c0ad018be08d8e1702fcedba21ddbfbc55fbd661b",
+      "current_sha256": "e5477f1ef6487235eaec8ae669a8215b094e8bb80cc17b9e7f0f57f3b2aa8154",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_inputs.py",
+      "normalized_baseline_ast_sha256": "6d01e2a084dd8c4c0915e11a51df73c6d58ff028490fceb9757bc76b218e228f",
+      "normalized_current_ast_sha256": "6d01e2a084dd8c4c0915e11a51df73c6d58ff028490fceb9757bc76b218e228f",
+      "top_level_functions": 3
+    },
+    {
+      "baseline_sha256": "1cebe53b0ad18be2a8a756e22f4a98d7f28522b43648ca88581449d3b3f38a18",
+      "current_sha256": "85e23873e47344e0c90e1623c339d35e24b2ef786d6e422f05e309c9fa7326cc",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_settings.py",
+      "normalized_baseline_ast_sha256": "6e701db5cfe235fffdd706eba148b639f4716576eef528a757ab71d87159bd07",
+      "normalized_current_ast_sha256": "6e701db5cfe235fffdd706eba148b639f4716576eef528a757ab71d87159bd07",
+      "top_level_functions": 2
+    },
+    {
+      "baseline_sha256": "8454ddbd133ad22f0259dd2393b336c6b208567d4ddcf0b97de129110b20b7c3",
+      "current_sha256": "f3194e74a27fccc48fc7d299572e68f37d471b44cb2ce955cc0a81c1252c6549",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_discovery_run.py",
+      "normalized_baseline_ast_sha256": "e1e41a2c3e466a13848810e2759f9996c1e0f65be3e2f2c6a3256d155139d89f",
+      "normalized_current_ast_sha256": "e1e41a2c3e466a13848810e2759f9996c1e0f65be3e2f2c6a3256d155139d89f",
+      "top_level_functions": 5
+    },
+    {
+      "baseline_sha256": "09da5813d7ea7a8f795f188341bcbe28c6a7bae3fa26e609a86693d25c5587f4",
+      "current_sha256": "67144210f55c35d82566fde7a0b9f352e87daacfc9151bbccba8d42f4de7ff16",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/_architecture_run.py",
+      "normalized_baseline_ast_sha256": "207a434563df9b723d0276fa3e2ee562d517349e10b5f504a1f3360a43fc9ce6",
+      "normalized_current_ast_sha256": "207a434563df9b723d0276fa3e2ee562d517349e10b5f504a1f3360a43fc9ce6",
+      "top_level_functions": 1
+    },
+    {
+      "baseline_sha256": "fd37a6758307310c0bb4abc449ee590c501d9ce8aaca2bbc53a3a0c1c04bb0c9",
+      "current_sha256": "8aeff7ec1a947d3b751465a0ea2a324c8f75d6adf900a3e583d542559ec37173",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/annotation_export.py",
+      "normalized_baseline_ast_sha256": "f22e9941af212cb4d31cc99ed3a40e225cb7455c2e12cada8829a648cb71bb7b",
+      "normalized_current_ast_sha256": "f22e9941af212cb4d31cc99ed3a40e225cb7455c2e12cada8829a648cb71bb7b",
+      "top_level_functions": 5
+    },
+    {
+      "baseline_sha256": "0c2c4937f31599535fe012d5da6f0cf34f11598151edb22551a0f34bf0aacf2d",
+      "current_sha256": "d7c835152665b3cc16f0b45bac3ee0fad0826f8cdcd3bfa7a296089817191eac",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/architecture_v3.py",
+      "normalized_baseline_ast_sha256": "07f99a2fb5feb9dd5aa3f670ee69f30a1732c2419e1f59da5a9ef5dcae94f186",
+      "normalized_current_ast_sha256": "07f99a2fb5feb9dd5aa3f670ee69f30a1732c2419e1f59da5a9ef5dcae94f186",
+      "top_level_functions": 4
+    },
+    {
+      "baseline_sha256": "9486c6e10d90afbb586fe453c33cace085a8c7a9e1991e6773c76b344ae220e9",
+      "current_sha256": "a913e422f917fb5a80d34c9d541c05647fe9dee08dd61d2433896dca823edde7",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/reporting_v3.py",
+      "normalized_baseline_ast_sha256": "b6d9e5d555c286c3a3f3ead4a6ea909be1fe76b47211ffa39dd693f8db55dcd9",
+      "normalized_current_ast_sha256": "b6d9e5d555c286c3a3f3ead4a6ea909be1fe76b47211ffa39dd693f8db55dcd9",
+      "top_level_functions": 6
+    },
+    {
+      "baseline_sha256": "b717ae462917c1fda7ed210fa7aee444e76ef1e4d2b899712f10549fe6036675",
+      "current_sha256": "0eeb55d8cf39b560eaf835f1a369af39a1a23437d8429dc79fb1965c354a38a6",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/rescue_v3.py",
+      "normalized_baseline_ast_sha256": "c0758896ba45c61449fdec8bffb4c4bf3c4f275242bdadb31e05257a5b9c4846",
+      "normalized_current_ast_sha256": "c0758896ba45c61449fdec8bffb4c4bf3c4f275242bdadb31e05257a5b9c4846",
+      "top_level_functions": 17
+    },
+    {
+      "baseline_sha256": "9a35f7dfd892c54678c40b4fe8415b646cb64251c34ba2903e9693426f35d08b",
+      "current_sha256": "ee5749b40d1d73b316ae4abd545b22e50963f30921cea23e44d2509c6fa012fd",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage0_validate.py",
+      "normalized_baseline_ast_sha256": "a7686debffe116615852cb3a0d5d8953d165bb4fd4bb2497362e71d473a25e2f",
+      "normalized_current_ast_sha256": "a7686debffe116615852cb3a0d5d8953d165bb4fd4bb2497362e71d473a25e2f",
+      "top_level_functions": 5
+    },
+    {
+      "baseline_sha256": "5a63d8bbd832abf23a711d4dac1a05fc2934d71e06e9815e81dfdf09edcf0c41",
+      "current_sha256": "3cbabf14be01c23863c3b14ef29a835097d7ee82e98869b23ddf8efdca912006",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage1_discover.py",
+      "normalized_baseline_ast_sha256": "e10d06baff1f8a11b51120caeea19cf164fe755947e4a3fa120e3a8c481b7650",
+      "normalized_current_ast_sha256": "e10d06baff1f8a11b51120caeea19cf164fe755947e4a3fa120e3a8c481b7650",
+      "top_level_functions": 4
+    },
+    {
+      "baseline_sha256": "482a5f0e0bf5ec866d100b88b2f0a0f315932b3297ea95503e2fae25ed66974e",
+      "current_sha256": "2307bc2265fae86f0e0167979abc016090f11dc1c6558d4dd9b3685f3c996a86",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage2_architecture.py",
+      "normalized_baseline_ast_sha256": "bc18ec1399899190a1f9eab98256c976f5ec903a458238f046c916c0d3632a85",
+      "normalized_current_ast_sha256": "bc18ec1399899190a1f9eab98256c976f5ec903a458238f046c916c0d3632a85",
+      "top_level_functions": 6
+    },
+    {
+      "baseline_sha256": "05bd38e7af961f18d6aa160ee08ddfa148cb41bbfb2e658570a9cfcefa97c04b",
+      "current_sha256": "15d8eb34158bae14aa73838524e944bfad882e5adbb9324993d1a8dc5ae3e98a",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage3_tier.py",
+      "normalized_baseline_ast_sha256": "52ceaabf24d0a2299ef892a82d5809feb247fcd7455f481991f190b11ec07cdc",
+      "normalized_current_ast_sha256": "52ceaabf24d0a2299ef892a82d5809feb247fcd7455f481991f190b11ec07cdc",
+      "top_level_functions": 16
+    },
+    {
+      "baseline_sha256": "f048d8e92204d2028e2dfe77d089a8e7f00449adf744a56185833815438e20da",
+      "current_sha256": "3746f2674b272bd01066b8c155df99e99ebd093fbc5ec42991e92ac52136b3a5",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage4_export.py",
+      "normalized_baseline_ast_sha256": "e99b262cd3496b02f487cf6ad5359dd14970545e7e967d36cfa096a6116a5071",
+      "normalized_current_ast_sha256": "e99b262cd3496b02f487cf6ad5359dd14970545e7e967d36cfa096a6116a5071",
+      "top_level_functions": 6
+    },
+    {
+      "baseline_sha256": "345235d2cdce3bbbe94f047542cec1a93782c88877f8c0677111615c859f7123",
+      "current_sha256": "345235d2cdce3bbbe94f047542cec1a93782c88877f8c0677111615c859f7123",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage5_miniprot.py",
+      "normalized_baseline_ast_sha256": "b0a370be94dbd9676df06793fab05f105815c2c2ee5bea200d919859b180189f",
+      "normalized_current_ast_sha256": "b0a370be94dbd9676df06793fab05f105815c2c2ee5bea200d919859b180189f",
+      "top_level_functions": 8
+    },
+    {
+      "baseline_sha256": "979041495cc56a024adc74adf1b80d4678ffe660d26cad18aeff3deaff1f75f7",
+      "current_sha256": "979041495cc56a024adc74adf1b80d4678ffe660d26cad18aeff3deaff1f75f7",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage6_exonerate.py",
+      "normalized_baseline_ast_sha256": "c447025407c34bb17e3ba9bfbdddef3a79b053efce4e0b48205eabef4308291e",
+      "normalized_current_ast_sha256": "c447025407c34bb17e3ba9bfbdddef3a79b053efce4e0b48205eabef4308291e",
+      "top_level_functions": 7
+    },
+    {
+      "baseline_sha256": "df5a9e317822c1c94ce891b9bbdca08752fe180983ae69f3ed0873eb71917d09",
+      "current_sha256": "4a2db2689f16a40b66ddd16fd3da750b258950dd384afdcb42446e3dfb3154b9",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/stage7_finalize.py",
+      "normalized_baseline_ast_sha256": "9fa0b2b0e35894ae68a5db6b1529f47b9b996ad17737b6ecb0ac8de8e17ad65c",
+      "normalized_current_ast_sha256": "9fa0b2b0e35894ae68a5db6b1529f47b9b996ad17737b6ecb0ac8de8e17ad65c",
+      "top_level_functions": 18
+    },
+    {
+      "baseline_sha256": "1c8d1e2a5c397251882d1b289bd0392acf4823748de06beae9823715d60dfc24",
+      "current_sha256": "85941b081acd3f7c59ed87544135eae526d8c8aeb08de1ec18bbd22bb52631c2",
+      "equivalent_after_reviewed_exclusions": true,
+      "module": "stages/tiering.py",
+      "normalized_baseline_ast_sha256": "ff360a7801fbc5f20b79ba4aaa1eacd7a45d143fcb094b968dcf00e0e8493c4d",
+      "normalized_current_ast_sha256": "ff360a7801fbc5f20b79ba4aaa1eacd7a45d143fcb094b968dcf00e0e8493c4d",
+      "top_level_functions": 6
+    }
+  ],
+  "scope": {
+    "effective_configuration_cases": 12,
+    "existing_report_summary_and_verification_functions_compared": 6,
+    "scientific_modules_compared": 35,
+    "top_level_functions_in_scientific_modules": 181
+  },
+  "status": "PASS"
+}

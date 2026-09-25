@@ -1,0 +1,25 @@
+##gff-version 3
+scaffold_1	fixture	gene	20000	24000	.	+	.	ID=FUN_000001
+scaffold_1	fixture	mRNA	20000	24000	.	+	.	ID=FUN_000001-T1;Parent=FUN_000001
+scaffold_1	fixture	gene	2000	4000	.	+	.	ID=FUN_000002
+scaffold_1	fixture	mRNA	2000	4000	.	+	.	ID=FUN_000002-T1;Parent=FUN_000002
+scaffold_1	fixture	gene	30000	33000	.	-	.	ID=FUN_000003
+scaffold_1	fixture	mRNA	30000	33000	.	-	.	ID=FUN_000003-T1;Parent=FUN_000003
+scaffold_1	fixture	gene	40000	44000	.	+	.	ID=FUN_000004
+scaffold_1	fixture	mRNA	40000	44000	.	+	.	ID=FUN_000004-T1;Parent=FUN_000004
+scaffold_2	fixture	gene	28500	29900	.	-	.	ID=FUN_000005
+scaffold_2	fixture	mRNA	28500	29900	.	-	.	ID=FUN_000005-T1;Parent=FUN_000005
+scaffold_3	fixture	gene	20000	23000	.	+	.	ID=FUN_000006
+scaffold_3	fixture	mRNA	20000	23000	.	+	.	ID=FUN_000006-T1;Parent=FUN_000006
+scaffold_2	fixture	gene	10000	12000	.	+	.	ID=FUN_000007
+scaffold_2	fixture	mRNA	10000	12000	.	+	.	ID=FUN_000007-T1;Parent=FUN_000007
+scaffold_2	fixture	gene	15000	18000	.	-	.	ID=FUN_000008
+scaffold_2	fixture	mRNA	15000	18000	.	-	.	ID=FUN_000008-T1;Parent=FUN_000008
+scaffold_4	fixture	gene	20000	22500	.	+	.	ID=FUN_000009
+scaffold_4	fixture	mRNA	20000	22500	.	+	.	ID=FUN_000009-T1;Parent=FUN_000009
+scaffold_1	fixture	gene	10000	14000	.	+	.	ID=FUN_000010
+scaffold_1	fixture	mRNA	10000	14000	.	+	.	ID=FUN_000010-T1;Parent=FUN_000010
+scaffold_1	fixture	gene	55000	58500	.	-	.	ID=FUN_000011
+scaffold_1	fixture	mRNA	55000	58500	.	-	.	ID=FUN_000011-T1;Parent=FUN_000011
+scaffold_1	fixture	gene	46000	49000	.	+	.	ID=FUN_000012
+scaffold_1	fixture	mRNA	46000	49000	.	+	.	ID=FUN_000012-T1;Parent=FUN_000012

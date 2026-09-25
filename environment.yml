@@ -1,0 +1,22 @@
+name: funlr
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  # Direct tool versions are pinned; exact builds are recorded in environments/.
+  # Exact platform builds are recorded in environments/*.lock.
+  - python=3.12.14
+  - matplotlib-base=3.10.8
+  - pandas=2.2.3
+  - numpy=1.26.4
+  - pyyaml=6.0.3
+  - hmmer=3.4
+  - samtools=1.21
+  - seqkit=2.12.0
+  - miniprot=0.18
+  - exonerate=2.4.0
+  - gffread=0.12.7
+  - pip=25.1.1
+  - setuptools=80.9.0
+  - wheel=0.45.1
