@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "metadata_version": "1.0.0",
+  "snapshot_id": "funlr-reference-models-1",
+  "scope": "Source annotations apply only to matching filename-and-SHA256 pairs. Library-level lineage does not establish each profile training history or redistribution permission.",
+  "libraries": [
+    {
+      "file": "NLR_ASM_combined.hmm",
+      "sha256": "bd23db2dbf9056e256d5aef92ea67e336dac2e2a16dbdf9c04069a737a875a7d",
+      "role": "Amyloid signaling motif annotation",
+      "citations": [
+        "https://doi.org/10.1371/journal.pcbi.1010787"
+      ],
+      "source_audit": {
+        "status": "REPORTED_LINEAGE_WITH_VERIFIED_COMPONENT_BYTES",
+        "description": "Reported components: Wojciechowski supplemental HMM files s014, s020 and s015.",
+        "audit_reference": "docs/MODEL_SOURCE_AUDIT.json",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    },
+    {
+      "file": "NLR_NBD_combined.hmm",
+      "sha256": "230982ccb1e008aee682d9469eb525a407d007ec104ba5ebb287765b1f276433",
+      "role": "Nucleotide-binding domain discovery",
+      "citations": [
+        "https://doi.org/10.1371/journal.pgen.1011739",
+        "https://doi.org/10.1371/journal.pcbi.1010787",
+        "https://doi.org/10.1093/gbe/evu251"
+      ],
+      "source_audit": {
+        "status": "REPORTED_LINEAGE_WITH_VERIFIED_COMPONENT_BYTES",
+        "description": "Reported components: Bonometti Sordariales NBD profiles; six Dyrka sequence-derived models built using MAFFT and hmmbuild; additional locally rebuilt, taxonomically split models from Wojciechowski supplemental sequence table s002. This is not a set of unchanged published HMMs.",
+        "audit_reference": "docs/MODEL_SOURCE_AUDIT.json",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    },
+    {
+      "file": "NLR_custom_combined.hmm",
+      "sha256": "d0ebec72a6092276f4cc16229869d5f6787de5f3949c54661d125998d68954e7",
+      "role": "Combined effector and sensor architecture",
+      "citations": [
+        "https://doi.org/10.1371/journal.pgen.1011739",
+        "https://doi.org/10.1371/journal.pcbi.1010787"
+      ],
+      "source_audit": {
+        "status": "REPORTED_LINEAGE_WITH_VERIFIED_COMPONENT_BYTES",
+        "description": "Exact byte composition verified: NLR_effectors_combined.hmm followed by NLR_sensors_combined.hmm. The historical assembly command and complete component training history remain unknown.",
+        "audit_reference": "docs/MODEL_SOURCE_AUDIT.json",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    },
+    {
+      "file": "NLR_effectors_combined.hmm",
+      "sha256": "ae5f7df4744da5d28dd36688535c0b9147cb420caa8af3c04da85a3db3d61862",
+      "role": "Effector architecture",
+      "citations": [
+        "https://doi.org/10.1371/journal.pgen.1011739",
+        "https://doi.org/10.1371/journal.pcbi.1010787"
+      ],
+      "source_audit": {
+        "status": "REPORTED_LINEAGE_WITH_VERIFIED_COMPONENT_BYTES",
+        "description": "Reported components: Wojciechowski s008 HMM library and Bonometti N-terminal profiles selected with the S15 table; category reassignment and name handling were applied.",
+        "audit_reference": "docs/MODEL_SOURCE_AUDIT.json",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    },
+    {
+      "file": "NLR_sensors_combined.hmm",
+      "sha256": "1829aae31fba0739fcb2c525cf2c9e5d133d8098d2593d1ba9e67f18ae6a748a",
+      "role": "Sensor architecture",
+      "citations": [
+        "https://doi.org/10.1371/journal.pgen.1011739"
+      ],
+      "source_audit": {
+        "status": "REPORTED_LINEAGE_WITH_VERIFIED_COMPONENT_BYTES",
+        "description": "Reported components: Bonometti non-NB S12 selections from terminal-domain libraries. Final 108 profiles include 29 extra records identical except NAME to another record. The extraction log reported 78 selected profiles; historical reconciliation is incomplete.",
+        "audit_reference": "docs/MODEL_SOURCE_AUDIT.json",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    },
+    {
+      "file": "Pfam-A.hmm",
+      "sha256": "4b0da6399b97d2b23329de82190b2e5705bde1dea4cb2d028a52712d5966739e",
+      "role": "General protein-domain annotation; release 38.2",
+      "citations": [
+        "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/"
+      ],
+      "source_audit": {
+        "status": "VERIFIED_RELEASE_BYTES",
+        "description": "Uncompressed Pfam38.2 Pfam-A.hmm; the inventory does not infer fungal NLR specificity from Pfam membership.",
+        "audit_reference": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/",
+        "historical_reconstruction": null,
+        "per_profile_training_sequences": null,
+        "redistribution_permission": null
+      }
+    }
+  ]
+}

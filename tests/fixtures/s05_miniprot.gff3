@@ -1,0 +1,5 @@
+##gff-version 3
+ctg1	miniprot	mRNA	100	900	1080	+	.	ID=MP1;Target=p2 1 300
+ctg1	miniprot	CDS	100	300	.	+	0	Parent=MP1;Target=p2 1 67
+ctg1	miniprot	CDS	500	900	.	+	0	Parent=MP1;Target=p2 68 300
+ctg2	miniprot	mRNA	50	200	400	-	.	ID=MP2;Target=p9 1 50

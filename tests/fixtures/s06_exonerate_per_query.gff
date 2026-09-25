@@ -1,0 +1,6 @@
+# exonerate protein2genome output
+##gff-version 3
+ctg1	exonerate:protein2genome:local	gene	100	900	580	+	.	sequence p1 ;
+ctg1	exonerate:protein2genome:local	exon	100	300	.	+	.	sequence p1 ;
+# trailing comment line
+ctg2	exonerate:protein2genome:local	gene	50	200	200	-	.	Query= p2

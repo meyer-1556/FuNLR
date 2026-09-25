@@ -1,0 +1,2 @@
+# One raw alignment from the supplied 20260422 Australia reference run.
+vulgar: PRIORITY__FUSION_000003 0 669 . scaffold_49 39648 42199 + 3268 M 12 36 S 0 2 5 0 2 I 0 62 3 0 2 S 1 1 M 13 39 S 0 1 5 0 2 I 0 44 3 0 2 S 1 2 M 49 147 S 0 2 5 0 2 I 0 48 3 0 2 S 1 1 M 49 147 S 0 1 5 0 2 I 0 58 3 0 2 S 1 2 M 74 222 5 0 2 I 0 131 3 0 2 M 15 45 S 0 1 5 0 2 I 0 52 3 0 2 S 1 2 M 82 246 S 0 1 5 0 2 I 0 66 3 0 2 S 1 2 M 49 147 S 0 1 5 0 2 I 0 51 3 0 2 S 1 2 M 319 957

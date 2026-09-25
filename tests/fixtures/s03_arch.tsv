@@ -1,0 +1,16 @@
+protein_id	domains_raw	domains_grouped	has_nbd_pfam	has_repeat	order_ok	flag_fp_domains	flag_rare_lrr	has_nbd_stage1	has_nbd
+t1a	NACHT;WD40	NACHT;WD40	True	True	True	False	False	True	True
+t1b_end	NACHT;WD40	NACHT;WD40	True	True	True	False	False	True	True
+t1b_short	NACHT;WD40	NACHT;WD40	True	True	True	False	False	True	True
+t2a	NACHT	NACHT	True	False	True	False	False	True	True
+t2b_noflank	NACHT	NACHT	True	False	True	False	False	True	True
+t2b_nbdonly	NACHT	NACHT	True	False	True	False	False	True	True
+t2b_repeatnear	NACHT	NACHT	True	False	True	False	False	True	True
+rep1	WD40	WD40	False	True	True	False	False	False	False
+t3	NACHT;Fbox	NACHT;Fbox	True	False	True	False	False	True	True
+t3_fp	NACHT;WD40;Septin	NACHT;WD40;Septin	True	True	True	True	False	True	True
+t3_nan			False	False	True	False	False	True	True
+t4a	WD40	WD40	False	True	True	False	False	False	False
+t4b	NACHT;WD40	NACHT;WD40	True	True	True	False	False	True	True
+t4c	Fbox	Fbox	False	False	True	False	False	False	False
+t_orphan	NACHT;WD40	NACHT;WD40	True	True	True	False	False	True	True

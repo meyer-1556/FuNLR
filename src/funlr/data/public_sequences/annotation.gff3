@@ -1,0 +1,15 @@
+##gff-version 3
+het_e_locus	demo	gene	12811	16930	.	+	.	ID=HETE_AAL37299_gene
+het_e_locus	demo	mRNA	12811	16930	.	+	.	ID=HETE_AAL37299;Parent=HETE_AAL37299_gene
+het_e_edge	demo	gene	12811	16930	.	+	.	ID=HETE_Q8X1P4_gene
+het_e_edge	demo	mRNA	12811	16930	.	+	.	ID=HETE_Q8X1P4;Parent=HETE_Q8X1P4_gene
+controls	demo	gene	11000	14000	.	+	.	ID=HETE_A7IQW3_gene
+controls	demo	mRNA	11000	14000	.	+	.	ID=HETE_A7IQW3;Parent=HETE_A7IQW3_gene
+controls	demo	gene	15000	17000	.	+	.	ID=KELCH_A0A090DCW7_gene
+controls	demo	mRNA	15000	17000	.	+	.	ID=KELCH_A0A090DCW7;Parent=KELCH_A0A090DCW7_gene
+controls	demo	gene	18000	19500	.	+	.	ID=TPR_B2B7X0_gene
+controls	demo	mRNA	18000	19500	.	+	.	ID=TPR_B2B7X0;Parent=TPR_B2B7X0_gene
+controls	demo	gene	20000	22000	.	+	.	ID=ORC2_B2B6T2_gene
+controls	demo	mRNA	20000	22000	.	+	.	ID=ORC2_B2B6T2;Parent=ORC2_B2B6T2_gene
+controls	demo	gene	23000	26000	.	+	.	ID=ATG1_Q3ZDQ4_gene
+controls	demo	mRNA	23000	26000	.	+	.	ID=ATG1_Q3ZDQ4;Parent=ATG1_Q3ZDQ4_gene

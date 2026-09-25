@@ -1,0 +1,27 @@
+# Paths resolve relative to this configuration file, from any working directory.
+# This hybrid fixture tests installation; these HMM subsets are not production databases.
+sample:
+  species_id: podospora_anserina_demo
+  sample_id: public_sequence_demo
+inputs:
+  genome: genome.fa
+  proteins: proteins.faa
+  gff3: annotation.gff3
+  eggnog: emapper.annotations
+databases:
+  pfam: db/pfam_mini.hmm
+  nbd_hmms: db/nbd.hmm
+  custom_hmms: null
+execution:
+  output_dir: output
+  cpu_threads: 2
+discovery:
+  discovery_mode: BROAD
+  pfam_nbd_scan: 0
+asm:
+  asm_enable: 0
+fusion:
+  enabled: 0
+reporting:
+  # Hand-made gene/mRNA spans contain no CDS features to translate.
+  write_proteins: 0

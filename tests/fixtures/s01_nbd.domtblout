@@ -1,0 +1,7 @@
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NACHT PF00029.1 300 prot1 - 350 1e-60 200.0 0.1 1 1 1e-60 1e-04 150.0 0.0 5 200 100 249 95 255 0.98 -
+NB-ARC PF00931.1 280 prot2 - 400 1e-30 120.0 0.0 1 1 1e-30 1e-03 100.0 0.0 1 200 10 219 5 225 0.90 -
+NACHT PF00029.1 300 prot2 - 400 1e-50 160.0 0.0 1 1 1e-50 1e-10 140.0 0.0 5 200 100 248 95 254 0.97 -
+NB-ARC PF00931.1 280 prot3 - 500 1e-80 260.0 0.0 1 1 1e-80 1e-20 200.0 0.0 1 250 50 300 40 310 0.99 -
+malformed short line

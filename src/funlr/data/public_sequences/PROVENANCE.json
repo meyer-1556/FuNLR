@@ -1,0 +1,531 @@
+{
+  "annotation": {
+    "eggnog": "Handwritten eggNOG-mapper-style table; eggNOG-mapper was not run. Names manually adapted from source records; zeros and dashes are placeholders, not search scores.",
+    "gff3": "Handwritten gene/mRNA features only. Two relocated native locus spans; five nominal intervals on random DNA. No CDS or exon features.",
+    "synthetic_coordinate_protein_ids": [
+      "HETE_A7IQW3",
+      "KELCH_A0A090DCW7",
+      "TPR_B2B7X0",
+      "ORC2_B2B6T2",
+      "ATG1_Q3ZDQ4"
+    ]
+  },
+  "audit_date": "2026-09-09",
+  "data_policies": {
+    "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
+    "CC0-1.0": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "NCBI": "https://www.ncbi.nlm.nih.gov/home/about/policies/#data",
+    "Pfam": "https://www.ebi.ac.uk/interpro/about/license/",
+    "UniProt": "https://www.uniprot.org/help/license/"
+  },
+  "files": {
+    "annotation.gff3": {
+      "bytes": 975,
+      "sha256": "2248a99ab61f974cec9057d538397fae34abf210d96bfa536e0ba3d59a3efe7c"
+    },
+    "config.yaml": {
+      "bytes": 681,
+      "sha256": "5d2629136df723c3e3a3eaee933f4ca967afdf63507fe50c2e9f481fae55af8f"
+    },
+    "db/nbd.hmm": {
+      "bytes": 161400,
+      "sha256": "f697ef5443ef9d0e0aca1d5f81817ec1b367d7aa8c3b393ae02f4b744ed2236f"
+    },
+    "db/pfam_mini.hmm": {
+      "bytes": 975643,
+      "sha256": "01980d6ab2625f67c9229303ae43268d22eb13d36bb3ad2214273057c5ee848e"
+    },
+    "emapper.annotations": {
+      "bytes": 692,
+      "sha256": "c6ddb03610c12f6228d92b2acba8e6f5fa2c92b2e4480afcfde677181409b751"
+    },
+    "genome.fa": {
+      "bytes": 91360,
+      "sha256": "957af612ef0d37423b91011a6cb8124384b79dc828607089d972d1b7ff6adbda"
+    },
+    "proteins.faa": {
+      "bytes": 6575,
+      "sha256": "8805d7a23ece92ef581aa86388980d93de2c55cf4a52e4b1625888e33adee917"
+    }
+  },
+  "generator": {
+    "archive_path": "_tools/build_demo.py",
+    "executed": false,
+    "inspected_as_text": true,
+    "random_seed": 7,
+    "sha256": "f6c267fe727c3b1708edadee05eff1ed488feb85719e6d2655846c7bddd4062d"
+  },
+  "genome": {
+    "hash_normalization": "uppercase DNA without FASTA header or whitespace",
+    "native_intron_preserved": true,
+    "recipe_verification": "All three complete contig sequences reproduced exactly with random.Random(7), successive choice(\"ACGT\"), in the supplied generator order",
+    "source_accession": "AF323583.1",
+    "source_cds": "join(811..3093,3143..4930)",
+    "source_insert_exact_match": [
+      true,
+      true
+    ],
+    "source_intron": {
+      "end": 3142,
+      "length_bp": 49,
+      "start": 3094
+    },
+    "source_response_sha256": "459ae4c645bf9df759e721684ea3f633899351f1eb4d8d9c87a62ca533f3d0cb",
+    "source_sequence_length_bp": 5413,
+    "source_sequence_sha256": "180ec36b809cb7129f6b070afef4494acc7d77aeb7ca9301c19db75247996dfe",
+    "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AF323583&rettype=gbwithparts&retmode=text",
+    "source_verified_date": "2026-09-09",
+    "synthetic_contigs": [
+      {
+        "length_bp": 29413,
+        "name": "het_e_locus",
+        "recipe": "12000 random bases + AF323583.1 + 12000 random bases",
+        "source_insert_end": 17413,
+        "source_insert_start": 12001
+      },
+      {
+        "length_bp": 20413,
+        "name": "het_e_edge",
+        "recipe": "12000 random bases + AF323583.1 + 3000 random bases",
+        "source_insert_end": 17413,
+        "source_insert_start": 12001
+      },
+      {
+        "length_bp": 40000,
+        "name": "controls",
+        "recipe": "40000 random bases; no protein CDS inserted"
+      }
+    ]
+  },
+  "hmm_profiles": {
+    "hash_normalization": "Each HMM record starts at HMMER3 and ends with // followed by newline; inter-record blank lines excluded",
+    "mini_pfam_family_count": 16,
+    "nbd_accessions": [
+      "PF05729.19",
+      "PF00931.29"
+    ],
+    "nbd_is_subset_of_mini_pfam": true,
+    "records": [
+      {
+        "accession": "PF00004.36",
+        "bytes": 62149,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "AAA",
+        "nseq": 207,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00004/?annotation=hmm",
+        "sha256": "7e322691e1d196499553b4604a5c70bde41b07f430b2a06165483ead36b318ab",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00023.37",
+        "bytes": 16531,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Ank",
+        "nseq": 1058,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00023/?annotation=hmm",
+        "sha256": "2c402c528045fae2c2a4de382746740155121c94d6a136b47d7175783d649667",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00069.32",
+        "bytes": 123025,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Pkinase",
+        "nseq": 37,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00069/?annotation=hmm",
+        "sha256": "37695d3cd57cd55d352e1d4229cf53eb5dc982fe8bffba23f106039e41a4065d",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00270.36",
+        "bytes": 78852,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "DEAD",
+        "nseq": 181,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00270/?annotation=hmm",
+        "sha256": "20708ec947eccec7741499118541f3ec77224c1e72f98c89126dfaeb5f1491f3",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00271.38",
+        "bytes": 52363,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Helicase_C",
+        "nseq": 419,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00271/?annotation=hmm",
+        "sha256": "d636d7141c15938e7cbd6983f9e8948d2e3a53654f87fda7460fcf1d4be290f9",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00400.39",
+        "bytes": 19328,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "WD40",
+        "nseq": 1465,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00400/?annotation=hmm",
+        "sha256": "6e2a6f2656c07a5115a85ff84ac6c7942a3a6f76df0287011f8e3a22c555924b",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00515.35",
+        "bytes": 17007,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "TPR_1",
+        "nseq": 549,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00515/?annotation=hmm",
+        "sha256": "4eb5aebf941352dfc6cc066d45c005603454f6674f9c074ec5c4233840389aca",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00735.25",
+        "bytes": 131378,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Septin",
+        "nseq": 13,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00735/?annotation=hmm",
+        "sha256": "3503aaeb6923f93e297a62d5936a2f1bdc9897ac41d82e7f951b0207b759667c",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF00931.29",
+        "bytes": 82560,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "NB-ARC",
+        "nseq": 9,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00931/?annotation=hmm",
+        "sha256": "c83b56aa0ccbc701372eb8ca434df9d527287f2824ea874fb8370c1d465a2326",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF01344.32",
+        "bytes": 22571,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Kelch_1",
+        "nseq": 146,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF01344/?annotation=hmm",
+        "sha256": "a7763e3cc10a4cf1df508e2bb39790080d967c7b1b2841c98fa7c9ffb24c06ad",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF01580.25",
+        "bytes": 103955,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "FtsK_SpoIIIE",
+        "nseq": 16,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF01580/?annotation=hmm",
+        "sha256": "25a66e289fe96ec94c331be9efb370e76b7c9063dfe7dfd2771c92a3ddd3fd91",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF02463.26",
+        "bytes": 103504,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "SMC_N",
+        "nseq": 28,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF02463/?annotation=hmm",
+        "sha256": "bbb6ba1e9ba8cc70f5ef0a07fb5265324a5ce7ae810f1dbbdaac1e9fbe520ab3",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF05729.19",
+        "bytes": 78839,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "NACHT",
+        "nseq": 25,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF05729/?annotation=hmm",
+        "sha256": "e2824451bf9c04041064048e8dc03753e5ef2e37a4e1e0b69de582f0abfadd44",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF07646.22",
+        "bytes": 23505,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Kelch_2",
+        "nseq": 41,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF07646/?annotation=hmm",
+        "sha256": "6db1d91ee9714214ba45c49f08fa75b75a3ffe4168d59c0b31eb5d00922bdab8",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF07719.24",
+        "bytes": 17004,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "TPR_2",
+        "nseq": 357,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF07719/?annotation=hmm",
+        "sha256": "208ab1740fbe8d48499d0485b7ad8b770e525e6e52cde4b4be62f3d46346e332",
+        "verified_date": "2026-09-09"
+      },
+      {
+        "accession": "PF12796.14",
+        "bytes": 43057,
+        "data_terms": "CC0-1.0",
+        "exact_match_official": true,
+        "name": "Ank_2",
+        "nseq": 179,
+        "official_download_url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF12796/?annotation=hmm",
+        "sha256": "6addf68b503d8dec1a56b08b6d5b9f5195ebf5d698047551f5f017815da5b86e",
+        "verified_date": "2026-09-09"
+      }
+    ],
+    "scope": "Small selected families for this fixture, not a full Pfam database or validated fungal NBD model set",
+    "source_and_training": "Official Pfam HMMs downloaded via InterPro; exact record contents verified against official downloads. Seed alignments were not independently rebuilt or distributed; nseq is the original HMM header value.",
+    "production_library_equivalence": "Not claimed; the demonstration uses two official Pfam profiles rather than the production fungal model bundle."
+  },
+  "proteins": {
+    "duplicate_explanation": "Q8X1P4 links directly to AAL37299.1; these are the same protein sequence, not separate allelic variants",
+    "duplicates": [
+      [
+        "HETE_AAL37299",
+        "HETE_Q8X1P4"
+      ]
+    ],
+    "record_count": 7,
+    "records": [
+      {
+        "data_terms": "NCBI molecular data policy",
+        "demo_id": "HETE_AAL37299",
+        "length": 1356,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina",
+        "sequence_matches": true,
+        "sequence_sha256": "78b34b63c14e5496eec90b2ed5b8051af27b44b6337f54fa110114bac643a567",
+        "source_accession": "AAL37299.1",
+        "source_response_sha256": "c1f932fabb893bb2be1fe270eafac8b8af9bfd2f21aec831eb58975d0eb75334",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=AAL37299.1&rettype=fasta&retmode=text",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "submissionNames": [
+            {
+              "fullName": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000313",
+                    "id": "AAL37299.1",
+                    "source": "EMBL"
+                  }
+                ],
+                "value": "Beta transducin-like protein HET-E2C*4"
+              }
+            }
+          ]
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "HETE_Q8X1P4",
+        "entryType": "UniProtKB unreviewed (TrEMBL)",
+        "length": 1356,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina",
+        "sequence_matches": true,
+        "sequence_sha256": "78b34b63c14e5496eec90b2ed5b8051af27b44b6337f54fa110114bac643a567",
+        "sequence_version": 1,
+        "source_accession": "Q8X1P4",
+        "source_response_sha256": "10364588abeb59db190f992c5d46fc9d1a3a6a6eafd689a25d142696b3a9b6eb",
+        "source_url": "https://rest.uniprot.org/uniprotkb/Q8X1P4.json",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "submissionNames": [
+            {
+              "fullName": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000313",
+                    "id": "CAL30215.1",
+                    "source": "EMBL"
+                  }
+                ],
+                "value": "HET-E protein"
+              }
+            }
+          ]
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "HETE_A7IQW3",
+        "entryType": "UniProtKB unreviewed (TrEMBL)",
+        "length": 1062,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina",
+        "sequence_matches": true,
+        "sequence_sha256": "b5ea48e0e91f2592ddd52a1c50e9ab17c69054c7305a7d52bc85402409b67c06",
+        "sequence_version": 1,
+        "source_accession": "A7IQW3",
+        "source_response_sha256": "16804df15a5e692d6e1c80e224da5064f69c1cf0eaf69c45d3e2c2ae9536b8e6",
+        "source_url": "https://rest.uniprot.org/uniprotkb/A7IQW3.json",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "recommendedName": {
+            "fullName": {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0008006",
+                  "id": "ProtNLM",
+                  "source": "Google"
+                }
+              ],
+              "value": "Kelch repeat-containing protein"
+            }
+          }
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "KELCH_A0A090DCW7",
+        "entryType": "UniProtKB unreviewed (TrEMBL)",
+        "length": 652,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383)",
+        "sequence_matches": true,
+        "sequence_sha256": "26421433a145eb511f7f912e26e7210ebff49e245289d31f92328275049cdb18",
+        "sequence_version": 1,
+        "source_accession": "A0A090DCW7",
+        "source_response_sha256": "1a89dc609e5f37454bf1955bff9aa3a288c138a7850f70cfd24dc52d9acae116",
+        "source_url": "https://rest.uniprot.org/uniprotkb/A0A090DCW7.json",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "recommendedName": {
+            "fullName": {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000259",
+                  "id": "PF10516",
+                  "source": "Pfam"
+                }
+              ],
+              "value": "Tetratricopeptide SHNi-TPR domain-containing protein"
+            }
+          }
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "TPR_B2B7X0",
+        "entryType": "UniProtKB unreviewed (TrEMBL)",
+        "length": 472,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383)",
+        "sequence_matches": true,
+        "sequence_sha256": "d7f86d75ca6efe8bc6e74800ce3c8ea938a4bf7a57394db5d6396c245e1fe348",
+        "sequence_version": 1,
+        "source_accession": "B2B7X0",
+        "source_response_sha256": "6ca0f202d8916ae82f6bd96a53d700164eaa80511cfe2141cb2b6ab5ce9e1218",
+        "source_url": "https://rest.uniprot.org/uniprotkb/B2B7X0.json",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "recommendedName": {
+            "fullName": {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000256",
+                  "id": "RU368084",
+                  "source": "RuleBase"
+                }
+              ],
+              "value": "Origin recognition complex subunit 2"
+            }
+          }
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "ORC2_B2B6T2",
+        "entryType": "UniProtKB unreviewed (TrEMBL)",
+        "length": 531,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383)",
+        "sequence_matches": true,
+        "sequence_sha256": "df1591b978a2eaa20ccabf7b1ae3e326d6a3b8f4501733b9c009fd36fa76200c",
+        "sequence_version": 1,
+        "source_accession": "B2B6T2",
+        "source_response_sha256": "5e58e21df39e43acbc603a618f2e771e784418bbb3ce871265b12f59b6c18773",
+        "source_url": "https://rest.uniprot.org/uniprotkb/B2B6T2.json",
+        "source_verified_date": "2026-09-09"
+      },
+      {
+        "annotation": {
+          "alternativeNames": [
+            {
+              "fullName": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "id": "P53104",
+                    "source": "UniProtKB"
+                  }
+                ],
+                "value": "Autophagy-related protein 1"
+              }
+            }
+          ],
+          "recommendedName": {
+            "ecNumbers": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "id": "P53104",
+                    "source": "UniProtKB"
+                  }
+                ],
+                "value": "2.7.11.1"
+              }
+            ],
+            "fullName": {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "id": "P53104",
+                  "source": "UniProtKB"
+                }
+              ],
+              "value": "Serine/threonine-protein kinase ATG1"
+            }
+          }
+        },
+        "data_terms": "CC-BY-4.0",
+        "demo_id": "ATG1_Q3ZDQ4",
+        "entryType": "UniProtKB reviewed (Swiss-Prot)",
+        "length": 941,
+        "modifications": "FASTA header replaced with demo_id; amino-acid sequence unchanged",
+        "organism": "Podospora anserina",
+        "sequence_matches": true,
+        "sequence_sha256": "e3c5e31c9d26290e4849e0c3fbef7070563d472f8535f163403df820cf9341a3",
+        "sequence_version": 1,
+        "source_accession": "Q3ZDQ4",
+        "source_response_sha256": "0f6d86593fdc101c952ae7b1bca8a9417de70714e98e56b9ca4f6848ef0078d1",
+        "source_url": "https://rest.uniprot.org/uniprotkb/Q3ZDQ4.json",
+        "source_verified_date": "2026-09-09"
+      }
+    ],
+    "sequence_hash_normalization": "amino-acid sequence only, without FASTA header or whitespace",
+    "unique_sequence_count": 6
+  },
+  "purpose": "Installation and regression testing; not biological validation or a production-model equivalence dataset",
+  "schema_version": 1,
+  "title": "Public-sequence hybrid installation fixture",
+  "verification_limits": [
+    "Downloaded record identities are verified, but public database annotations are not independent experimental validation.",
+    "The two HET-E genomic targets are artificial duplicates of one native locus.",
+    "Dual-track refinement sends one priority and three comprehensive queries to Exonerate because the duplicated loci map to multiple scaffolds; successful alignment is not biological validation.",
+    "No performance benchmark, sensitivity/specificity estimate, whole-genome validation, or production model parity is established."
+  ],
+  "construction_attribution": "Contributed demonstration materials; copyright and BSD-3-Clause conditions are retained in THIRD_PARTY_LICENSE.txt."
+}
