@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import sys
+import os
+if os.environ.get("FUNLR_TEST_DOUBLES") != "1":
+    raise SystemExit("Refusing to run a synthetic test double outside the test suite")
+if any(a in ("--version", "-h", "--help", "version") for a in sys.argv[1:]):
+    print("SYNTHETIC TEST DOUBLE shim-1.0")
+    raise SystemExit(0)
+import os, sys, re
+FIX = os.environ["FUNLR_FIXTURE_DIR"]
+
+# emulate: exonerate --model protein2genome --query PROT --target GENOME ...
+# (also tolerates positional "<prot> <genome>"). Find the protein fasta among
+# the arguments, read its first header, and emit the canned GFF for that id.
+args = sys.argv[1:]
+candidates = []
+if "--query" in args:
+    candidates.append(args[args.index("--query") + 1])
+candidates.extend([a for a in args if not a.startswith("--")])
+
+pid = None
+for path in candidates:
+    if not os.path.isfile(path):
+        continue
+    with open(path) as fh:
+        for line in fh:
+            if line.startswith(">"):
+                cand = line[1:].split()[0]
+                if os.path.exists(os.path.join(FIX, "canned", "exonerate", cand + ".gff")):
+                    pid = cand
+                break
+    if pid:
+        break
+
+if pid:
+    with open(os.path.join(FIX, "canned", "exonerate", pid + ".gff")) as fh:
+        sys.stdout.write(fh.read())
+# else: emit nothing (no refined model)

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import os
+import sys
+from pathlib import Path
+if os.environ.get("FUNLR_TEST_DOUBLES") != "1":
+    raise SystemExit("Refusing to run a synthetic test double outside the test suite")
+if any(a in ("--version", "-h", "--help", "version") for a in sys.argv[1:]):
+    print("SYNTHETIC TEST DOUBLE shim-2.0")
+    raise SystemExit(0)
+args = sys.argv[1:]
+fixture = Path(os.environ["FUNLR_FIXTURE_DIR"])
+
+# Canned translation double: only requested annotated transcript IDs are emitted.
+# Sequence correctness is covered separately by the real-tool public demo.
+assert "-g" in args and "-y" in args, args
+ids = set()
+for line in Path(args[0]).read_text().splitlines():
+    fields = line.split("\t")
+    if len(fields)==9 and fields[2] in {"mRNA", "transcript"}:
+        attributes = dict(field.split("=",1) for field in fields[8].split(";") if "=" in field)
+        ids.add(attributes["ID"])
+records = []
+keep = False
+for line in (fixture/"proteins.faa").read_text().splitlines():
+    if line.startswith(">"):
+        keep = line[1:].split()[0] in ids
+    if keep:
+        records.append(line)
+Path(args[args.index("-y")+1]).write_text("\n".join(records)+"\n")

@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import sys
+import os
+if os.environ.get("FUNLR_TEST_DOUBLES") != "1":
+    raise SystemExit("Refusing to run a synthetic test double outside the test suite")
+if any(a in ("--version", "-h", "--help", "version") for a in sys.argv[1:]):
+    print("SYNTHETIC TEST DOUBLE shim-1.0")
+    raise SystemExit(0)
+
+import os, sys
+db = sys.argv[-1]
+for ext in ("h3m", "h3i", "h3f", "h3p"):
+    open(db + "." + ext, "w").write("shim\n")
+sys.stderr.write("Pressed (shim)\n")

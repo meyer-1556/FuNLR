@@ -1,0 +1,2 @@
+scaffold_4	exonerate	gene	19800	22600	600	+	.	gene_id 0 ; sequence FUN_000009-T1
+scaffold_4	exonerate	exon	19800	22600	600	+	.	sequence FUN_000009-T1

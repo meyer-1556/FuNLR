@@ -1,0 +1,23 @@
+# canned
+NACHT PF00000.4 - FUN_000001-T1 - - - - - - - - 1e-40 - - - - 200 380 - - - description
+WD40 PF00000.3 - FUN_000001-T1 - - - - - - - - 1e-10 - - - - 500 540 - - - description
+WD40 PF00000.3 - FUN_000001-T1 - - - - - - - - 1e-09 - - - - 600 640 - - - description
+NACHT PF00000.4 - FUN_000002-T1 - - - - - - - - 1e-30 - - - - 50 230 - - - description
+AAA_16 PF00000.2 - FUN_000003-T1 - - - - - - - - 1e-20 - - - - 100 250 - - - description
+ORC4_C PF00000.9 - FUN_000003-T1 - - - - - - - - 1e-15 - - - - 400 550 - - - description
+NACHT PF00000.7 - FUN_000003-T1 - - - - - - - - 5e-05 - - - - 300 460 - - - description
+Kelch_1 PF00000.9 - FUN_000004-T1 - - - - - - - - 1e-12 - - - - 100 150 - - - description
+Kelch_2 PF00000.7 - FUN_000004-T1 - - - - - - - - 1e-11 - - - - 300 350 - - - description
+NACHT PF00000.5 - FUN_000005-T1 - - - - - - - - 1e-38 - - - - 210 390 - - - description
+WD40 PF00000.4 - FUN_000005-T1 - - - - - - - - 1e-08 - - - - 700 740 - - - description
+AAA_16 PF00000.4 - FUN_000006-T1 - - - - - - - - 1e-22 - - - - 80 200 - - - description
+NACHT PF00000.8 - FUN_000006-T1 - - - - - - - - 1e-25 - - - - 300 480 - - - description
+WD40 PF00000.2 - FUN_000007-T1 - - - - - - - - 1e-07 - - - - 50 100 - - - description
+TPR_1 PF00000.4 - FUN_000008-T1 - - - - - - - - 1e-09 - - - - 100 140 - - - description
+TPR_2 PF00000.2 - FUN_000008-T1 - - - - - - - - 1e-08 - - - - 400 440 - - - description
+NACHT PF00000.6 - FUN_000009-T1 - - - - - - - - 1e-20 - - - - 120 300 - - - description
+Ank_2 PF00000.6 - FUN_000011-T1 - - - - - - - - 1e-12 - - - - 100 140 - - - description
+NACHT PF00000.2 - FUN_000011-T1 - - - - - - - - 1e-35 - - - - 600 780 - - - description
+NACHT PF00000.3 - FUN_000012-T1 - - - - - - - - 1e-33 - - - - 200 380 - - - description
+WD40 PF00000.8 - FUN_000012-T1 - - - - - - - - 1e-07 - - - - 700 740 - - - description
+Septin PF00000.5 - FUN_000012-T1 - - - - - - - - 1e-18 - - - - 500 650 - - - description

@@ -1,0 +1,13 @@
+#query	seed_ortholog	evalue	score	eggnog_ogs	max_annot_lvl	COG_category	Description	Preferred_name	GOs	EC	KEGG_ko
+FUN_000001-T1	-	0	0	-	-	-	NACHT and WD40 domain-containing protein	-	-	-	-
+FUN_000002-T1	-	0	0	-	-	-	NACHT domain protein	-	-	-	-
+FUN_000003-T1	-	0	0	-	-	-	Component of the origin recognition complex (ORC) that binds origins of replication	ORC4	GO:0006260	-	-
+FUN_000004-T1	-	0	0	-	-	-	Kelch motif	-	-	-	-
+FUN_000005-T1	-	0	0	-	-	-	NACHT and WD40 domain-containing protein	-	-	-	-
+FUN_000006-T1	-	0	0	-	-	-	Nacht domain-containing protein	-	-	-	-
+FUN_000007-T1	-	0	0	-	-	-	WD40 repeat-like protein	-	-	-	-
+FUN_000008-T1	-	0	0	-	-	-	TPR-like protein	-	-	-	-
+FUN_000009-T1	-	0	0	-	-	-	hypothetical protein	-	-	-	-
+FUN_000010-T1	-	0	0	-	-	-	glutamine synthetase	GLN1	GO:0006542	-	-
+FUN_000011-T1	-	0	0	-	-	-	NACHT and ankyrin repeat protein	-	-	-	-
+FUN_000012-T1	-	0	0	-	-	-	NACHT and WD40 domain-containing protein	-	-	-	-
